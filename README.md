@@ -1,102 +1,138 @@
-# Video Effect Reel
+<div align="center">
 
-Analyze a Reel or local video with Claude Code and accumulate a searchable, evidence-linked effects library. The analyzer samples densely (12 fps by default; up to 30 fps) and makes timestamped contact sheets. Claude writes an analysis; the local CLI saves it to your private `local/` folder. The library includes a clearly separated starter pack of common editing recipes; these are references for applying effects to the user's footage, not claims that a technique appeared in a Reel.
+# 🎬 Video Effect Reel
 
-The starter pack is based primarily on the documented Remotion transitions/effects and FFmpeg's built-in `xfade`/filter families. It currently contains 123 entries (including groups of directional variants), in English ([EFFECTS.md](library/EFFECTS.md)) with a full Hebrew translation ([EFFECTS.he.md](library/EFFECTS.he.md)). The catalog itself only analyzes and documents; it does not yet render/export a finished edit. Claude Code can use these recipes inside a video project that has the appropriate rendering/editing engine available. Review the engine's licensing before adding dependencies to a commercial project.
+**See a Reel with an editing trick you love? Find out what it is, and recreate it on your own footage.**
 
-It also includes a phone-friendly local web page for pasting a Reel link or uploading a video. After Claude analyzes it, the page presents suggested effect names and any potential same/similar matches in the existing catalog for review; only then does it add the analysis to the library. Matches do not automatically suppress an entry. The server defaults to loopback (`127.0.0.1`); set `REEL_EFFECTS_HOST` to your LAN IP to open it to your home network.
+Drop in a link or a video. Claude Code reads it frame by frame, names the effects, and writes a recipe for each one.
+You also get **123 ready-made effect recipes** out of the box, in English and Hebrew.
 
-This is a growing reference library, not model training. Future runs can read the accumulated library as examples. Each entry retains timestamps, evidence, confidence, and a practical recipe for applying the effect to your own footage.
+[![Library check](https://github.com/moshspro-dev/video-effect-reel/actions/workflows/check.yml/badge.svg)](https://github.com/moshspro-dev/video-effect-reel/actions/workflows/check.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776AB)
+![English + Hebrew](https://img.shields.io/badge/languages-English%20%2B%20%D7%A2%D7%91%D7%A8%D7%99%D7%AA-8a5cf6)
 
-## Use it from an editing agent or skill
+[**עברית**](README.he.md) · [Quick start](#-quick-start) · [Effects](#-123-effects-and-counting) · [Use it from your editing agent](#-plug-it-into-your-editing-agent) · [Contribute](#-add-an-effect-in-5-minutes)
 
-The library only documents techniques; your editing tool (a Claude Code skill, an agent, HyperFrames, Remotion, FFmpeg) does the rendering. Give it a one-line lookup:
+<img src="docs/images/effects-reel.gif" alt="Six effects from the library rendered on a test clip: RGB split, zoom punch-in, boomerang, VHS look, echo trails, mirror" width="100%">
 
-```bash
-/path/to/video-effect-reel/reel-effects find "speed ramp"            # English or Hebrew words
-/path/to/video-effect-reel/reel-effects find רמפת מהירות --lang he   # recipes printed in Hebrew
-/path/to/video-effect-reel/reel-effects find vhs --json              # structured output for scripts
-```
+<sub>Six recipes from the library, rendered with FFmpeg on a synthetic test clip. Each one is a real entry you can look up with <code>./reel-effects find</code>.</sub>
 
-`find` matches every word you give it against names, aliases, tags and recipes in both languages, plus your private analyses, and prints the best matches with their recipes. A ready-to-paste section for your editing skill is in [integrations/editing-skill-snippet.md](integrations/editing-skill-snippet.md). Typical wiring: add a line such as "Before choosing an effect or transition, run `/path/to/video-effect-reel/reel-effects find <idea>` and follow the recipe it returns" to your editing skill or project `CLAUDE.md`. Alternatively start Claude Code in your video project with `claude --add-dir /path/to/video-effect-reel` so it can read the library files directly.
+</div>
 
-## Language and privacy
+---
 
-The web page, the library and Claude's analyses work in English (default) or Hebrew:
+## ✨ Why this exists
 
-```bash
-./reel-effects lang he   # Hebrew interface, Hebrew library, analyses written in Hebrew
-./reel-effects lang en   # back to English
-```
+- You watch a Reel and think *"how did they do that transition?"* but you don't know its name, let alone how to build it.
+- Tutorials are long, and effect names differ between tools.
+- So: give the video to Claude Code, get **timestamps, a description, visual evidence and a practical recipe**, and keep every analysis in a searchable library that grows with you.
 
-The setting is stored in `local/settings.json` (or set `REEL_EFFECTS_LANG`). Restart the web server after changing it.
+It is a **reference library, not a renderer**. Your own editing tool (HyperFrames, Remotion, FFmpeg, After Effects…) does the rendering; this project tells it *what* to build and *how*.
 
-Everything personal stays in `local/`, which Git ignores: your analyses (`local/analyses.json`, readable as `local/ANALYSES.md`), the Reel links you analyzed and your settings. The shared library in `library/` holds only general recipes, so you can pull updates and contribute effects without publishing what you analyzed. Back up `local/` if you want to keep your analyses.
-
-If you used an older version that stored analyses inside `library/effects.json`, copy that file somewhere safe before updating, then run `./reel-effects import-analyses <copy-of-old-effects.json>`.
-
-## Requirements
-
-- Python 3.10+
-- FFmpeg
-- Claude Code CLI installed and authenticated (`claude auth status`)
-- `yt-dlp` available to the Python interpreter for Instagram URLs
-- Pillow for contact sheets
-
-For a fresh clone, run `./setup.sh` to install the Python dependencies into a project-local virtual environment.
-
-## Use
+## 🚀 Quick start
 
 ```bash
-./reel-effects add 'https://www.instagram.com/reel/…/'
-./reel-effects add ~/Videos/reference.mp4
-./reel-effects add --start 4 --end 7 --fps 30 ~/Videos/reference.mp4
-./reel-effects list
-./reel-effects check   # validate the library after editing it by hand
-./reel-effects find zoom # search recipes (English or Hebrew)
-./reel-effects lang he # switch the page and analyses to Hebrew
-```
-
-## Web page
-
-```bash
-.venv/bin/python web_server.py                                   # http://127.0.0.1:4319/ (this computer only)
-REEL_EFFECTS_HOST=<your-LAN-IP> .venv/bin/python web_server.py   # reachable from your phone on the same Wi-Fi
-```
-
-To keep it running in the background, copy `deploy/video-effect-reel.service` to `~/.config/systemd/user/`, edit the lines marked `EDIT`, and run `systemctl --user enable --now video-effect-reel`.
-
-**Security:** the page has no login. Anyone who can reach it can submit videos (which run Claude Code on your account) and view the catalog. Bind it only to `127.0.0.1` or a private home-network address. Never expose it to the public internet.
-
-The web page runs Claude Code automatically in a fresh, non-interactive session for each submitted video. To work with Claude Code interactively instead:
-
-```bash
+git clone https://github.com/moshspro-dev/video-effect-reel.git
 cd video-effect-reel
-claude
+
+./reel-effects find "speed ramp"            # works right away, standard library only
+./setup.sh                                  # one-time: Pillow + yt-dlp for video analysis
+./reel-effects add ~/Videos/reference.mp4   # analyze a video (needs FFmpeg + Claude Code)
+.venv/bin/python web_server.py              # phone-friendly page at http://127.0.0.1:4319/
 ```
 
-Then invoke `/reel-effect-librarian` and ask it to use `library/EFFECTS.md` to suggest how to recreate an effect with your own footage. The repo-local skill is also selected automatically when Claude Code recognizes a relevant request.
+<div align="center">
+<img src="docs/images/find.png" alt="Terminal: ./reel-effects find speed ramp prints the recipe" width="80%">
+</div>
 
-If Instagram requires the logged-in browser session, add `--cookies-from-browser chrome` only if that browser profile is already logged in. Or save the video yourself and provide its local path.
+`find` searches English **and** Hebrew words at once. Add `--lang he` for Hebrew output or `--json` for scripts and agents.
 
-`library/effects.json` is the machine-readable source of truth for the shared recipes; `library/EFFECTS.md` and `library/EFFECTS.he.md` are generated readable indexes (`./reel-effects index`). Your analyses live in `local/`, and generated frames, downloaded copies and prompts live in `work/`; both are excluded from Git.
+## 📱 A page you can use from your phone
 
-## Claude Code skill
+Paste a Reel link or upload a clip, review the effect names Claude suggests, and save them to your private library. The page works in English or Hebrew (`./reel-effects lang he`).
 
-The repo-local skill at `.claude/skills/reel-effect-librarian/SKILL.md` defines the visual-analysis format. The CLI passes those instructions to Claude Code and restricts it to reading files; only the local CLI edits the catalog.
+<div align="center">
+<img src="docs/images/ui.jpg" alt="The web page on a phone: upload form, library search in English, and the same search in Hebrew" width="100%">
+</div>
 
-The CLI calls Claude Code in non-interactive print mode. Sign in once with `claude` if `claude auth status` reports `loggedIn: false`; no API key is stored in this repository.
+## 🧰 123 effects and counting
 
-## Notes
+| Category | # | A few examples |
+|---|---:|---|
+| Transitions | 33 | Whip pan, match cut, smash cut, spin, iris, crosszoom, cube rotate |
+| Texture / stylize | 19 | VHS look, datamosh, halftone, film grain, scanlines, sketch/comic |
+| Color / exposure | 16 | Duotone, LUT look, hue shift, negative flash, selective monochrome |
+| Transform / distort | 12 | Kaleidoscope, shatter, fisheye, barrel, corner pin |
+| Blur / glow | 10 | Echo trails, motion blur, progressive blur, glow halo |
+| Timing / speed | 8 | Speed ramp, boomerang, reverse, optical-flow slow motion, stutter |
+| Camera motion | 7 | Dolly zoom, Ken Burns, rack focus, handheld drift, shake on impact |
+| Reveal / mask | 5 | Letterbox bars, before/after slider, tear reveal |
+| Compositing | 5 | Split screen, picture-in-picture, text behind subject, clone |
+| Text and emphasis | 6 | Word-by-word captions, kinetic text, typewriter, sticker cutout |
+| Other | 2 | Light leak, RGB split |
 
-- A video file or extracted frames are sent to the user's configured Claude Code account for analysis. Instagram URL downloads use yt-dlp. Nothing is published by this tool.
-- Frame sampling catches more rapid changes than a single thumbnail, but even 30 fps can miss sub-frame effects. The report distinguishes visible evidence from inference.
-- Be mindful of rights and account/platform restrictions when processing videos.
+Every recipe says what you see, when to use it, and how to recreate it on your own footage. Several include FFmpeg commands that were test-run. Browse them in [`library/EFFECTS.md`](library/EFFECTS.md) (English) or [`library/EFFECTS.he.md`](library/EFFECTS.he.md) (Hebrew).
 
-## Contributing
+## 🔌 Plug it into your editing agent
 
-New effects, recipe fixes and bug reports are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the effect format and checks.
+Give your editing skill or agent one line and it will look recipes up instead of improvising:
 
-## License
+```bash
+/path/to/video-effect-reel/reel-effects find "whip pan"
+```
 
-[MIT](LICENSE)
+A ready-to-paste section for Claude Code skills and `CLAUDE.md` files is in [`integrations/editing-skill-snippet.md`](integrations/editing-skill-snippet.md). The library also includes a Claude Code skill, `/reel-effect-librarian`, for planning edits interactively.
+
+## 🔒 Private by design
+
+- The shared library (`library/`) contains **only general recipes**, never someone's videos.
+- **Your analyses and the links you analyzed stay in `local/`**, which Git ignores. You can pull updates and send contributions without publishing anything you studied.
+- Nothing is published by this tool. Video frames go only to the Claude Code account you already use.
+
+## 🤝 Add an effect in 5 minutes
+
+Know a technique that's missing? Add one entry to `library/effects.json`, run `./reel-effects index && ./reel-effects check`, and open a pull request. A CI check validates every PR. Details, the entry format and the Hebrew translation block are in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+Hebrew speakers: effects without a translation fall back to English, so translations are a great first contribution.
+
+## ⚙️ How it works
+
+1. FFmpeg samples the video at 12–30 fps and builds timestamped contact sheets (`--start`/`--end` limit the range).
+2. Claude Code, in non-interactive read-only mode, studies the sheets together with the library and returns effects with start/end time, evidence frames, confidence and a recipe. It also flags matches with recipes you already have.
+3. You review and rename the effects, then they are saved to your private `local/` folder.
+
+The starter pack is based on the documented Remotion transitions and effects and on FFmpeg's built-in filters. These entries are **general techniques, not claims that a specific Reel used them**. Only your own analyses describe what was seen in a video.
+
+## 📋 Requirements
+
+- Python 3.10+ (`find`, `check` and `index` need nothing else)
+- For analyzing videos: FFmpeg, [Claude Code](https://claude.com/claude-code) signed in (`claude auth status`), plus the packages from `./setup.sh` (Pillow, yt-dlp)
+- macOS or Linux (Windows via WSL)
+
+## 🛠️ Everyday commands
+
+```bash
+./reel-effects add 'https://www.instagram.com/reel/…/'            # needs yt-dlp; see below if login is required
+./reel-effects add --start 4 --end 7 --fps 30 ~/Videos/clip.mp4   # a short, fast section
+./reel-effects find zoom                                          # search recipes and your analyses
+./reel-effects list                                               # print the whole library
+./reel-effects lang he                                            # Hebrew page and Hebrew analyses (en to switch back)
+./reel-effects check                                              # validate the library
+```
+
+If Instagram needs a logged-in session, add `--cookies-from-browser chrome` only for a browser profile that is already logged in, or just save the video and pass its path.
+
+Settings live in `local/settings.json` (or `REEL_EFFECTS_LANG`, `REEL_EFFECTS_LOCAL_DIR`). The latter can point to a synced folder if you want the same analyses on two computers.
+
+### Run the page in the background
+
+Copy `deploy/video-effect-reel.service` to `~/.config/systemd/user/`, edit the lines marked `EDIT`, then `systemctl --user enable --now video-effect-reel`. To open the page to your phone on the same Wi-Fi, set `REEL_EFFECTS_HOST=<your LAN IP>`.
+
+> **Security:** the page has no login. Anyone who can reach it can run Claude Code on your account and read your library. Keep it on `127.0.0.1` or a private home network, and **never expose it to the internet**.
+
+## ⚖️ Notes
+
+- Frame sampling catches fast changes better than a single thumbnail, but even 30 fps can miss sub-frame effects. Reports separate visible evidence from inference.
+- Only process videos you have the right to analyze, and follow each platform's terms. Recipes are meant for **your own footage**; don't reuse other people's footage, music or assets.
+- Licensed under [MIT](LICENSE). Contributions welcome. If this saved you time, a ⭐ helps others find it.
