@@ -1,0 +1,28 @@
+name: הצעת אפקט / Effect suggestion
+description: הציעו טכניקת עריכה שחסרה בספרייה
+labels: [effect]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: שם האפקט (באנגלית, כמו שעורכים מכירים אותו)
+      placeholder: "Speed ramp"
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: מה רואים על המסך?
+      description: תיאור קצר של האפקט ומתי הוא מתאים.
+    validations:
+      required: true
+  - type: textarea
+    id: recipe
+    attributes:
+      label: איך משחזרים אותו על צילומים משלך?
+      description: שלבים, תזמון, ואם יש — פקודת FFmpeg או שם של אפקט ב-Remotion/תוכנת עריכה.
+  - type: input
+    id: reference
+    attributes:
+      label: קישור לתיעוד או להסבר (לא חובה)
+      description: עדיף תיעוד רשמי או מדריך. לא להעלות סרטונים של אחרים.

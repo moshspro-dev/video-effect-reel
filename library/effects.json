@@ -1,0 +1,3338 @@
+{
+  "version": 2,
+  "languages": [
+    "en",
+    "he"
+  ],
+  "starter_effects": [
+    {
+      "id": "whip-pan",
+      "name": "Whip pan with motion blur",
+      "aliases": [
+        "whip transition",
+        "whip pan",
+        "סוויש מצלמה"
+      ],
+      "category": "Transition",
+      "summary": "A fast horizontal or vertical camera move that links two shots; the motion blur hides the cut.",
+      "when_to_use": "When there is movement or an energy change on the beat, ideally when the shots can continue in the same direction.",
+      "recipe": "Using the original shots: end the first with a fast swish, cut while the frame is blurred, and start the next in the same direction. Add a short motion blur and settle the frame right after the cut. Time the cut to the beat.",
+      "tags": [
+        "transition",
+        "motion-blur",
+        "rhythm",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/",
+      "he": {
+        "name": "Whip-pan עם motion blur",
+        "category": "מעבר",
+        "summary": "תנועת מצלמה מהירה אופקית או אנכית שמחברת בין שני שוטים; טשטוש התנועה מסתיר את החיתוך.",
+        "when_to_use": "כשיש תנועה או שינוי אנרגיה בקצב הביט, ועדיף כשהשוטים יכולים להמשיך את הכיוון.",
+        "recipe": "משתמשים בשוטים המקוריים: מסיימים את הראשון בסוויש מהיר, חותכים כשהפריים מטושטש, ומתחילים את הבא באותו כיוון; מוסיפים motion blur קצר ומייצבים את הפריים מיד אחרי החיתוך. לכוון את החיתוך לביט.",
+        "tags": [
+          "מעבר",
+          "motion-blur",
+          "קצב",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "zoom-blur",
+      "name": "Zoom-blur / punch-in",
+      "aliases": [
+        "crash zoom",
+        "zoom transition",
+        "פאנץ׳ אין"
+      ],
+      "category": "Camera motion",
+      "summary": "A fast push in or out, sometimes with blur, to emphasize a moment or to transition between shots.",
+      "when_to_use": "To emphasize a detail, a reaction or a musical moment; keep the point of interest inside the frame.",
+      "recipe": "On the original shot, create a fast scale with a short ease toward the point of interest and back, or into a cut. Add blur only at the peak of the move and remove it right away. Do not replace or generate footage.",
+      "tags": [
+        "zoom",
+        "blur",
+        "emphasis",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/",
+      "he": {
+        "category": "תנועת מצלמה",
+        "summary": "דחיפה מהירה פנימה או החוצה, לעתים עם blur, ליצירת הדגשה או מעבר בין שוטים.",
+        "when_to_use": "להדגיש פרט, תגובה או רגע מוזיקלי; לשמור על מרכז העניין בתוך הפריים.",
+        "recipe": "על השוט המקורי יוצרים scale מהיר עם easing קצר אל נקודת העניין ובחזרה או לתוך חיתוך; מוסיפים blur רק בשיא התנועה ומנחיתים אותו מיד. אין להחליף או לייצר את המצולם.",
+        "tags": [
+          "zoom",
+          "blur",
+          "הדגשה",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "flash-cut",
+      "name": "Flash-frame cut",
+      "aliases": [
+        "flash transition",
+        "white flash",
+        "הבזק מעבר"
+      ],
+      "category": "Transition",
+      "summary": "A very short flash between two shots, usually synced to a musical hit.",
+      "when_to_use": "For a sharp transition or to emphasize a hit; used too often it can feel harsh.",
+      "recipe": "Cut between the shots on the beat and add a white/exposure layer for one to a few frames with a short fade. Keep the details of both shots visible before and after.",
+      "tags": [
+        "flash",
+        "transition",
+        "beat-sync"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/",
+      "he": {
+        "category": "מעבר",
+        "summary": "הבזק קצר מאוד בין שני שוטים, לרוב מסונכרן עם מכה מוזיקלית.",
+        "when_to_use": "במעבר חד או בהדגשת hit; שימוש תכוף מדי עלול להיראות צורם.",
+        "recipe": "חותכים בין השוטים על הביט ומוסיפים שכבת לבן/חשיפה למשך פריים עד כמה פריימים, עם דעיכה קצרה. משאירים את פרטי השוטים נראים לפני ואחרי.",
+        "tags": [
+          "flash",
+          "מעבר",
+          "beat-sync"
+        ]
+      }
+    },
+    {
+      "id": "film-burn",
+      "name": "Film-burn / light leak",
+      "aliases": [
+        "light leak",
+        "film burn transition",
+        "דליפת אור"
+      ],
+      "category": "Light overlay",
+      "summary": "A flicker of light or colored burn that appears over the image, used as a transition or a short texture.",
+      "when_to_use": "For a soft transition or an analog feel; avoid covering the key moment of action.",
+      "recipe": "Keep the original shot and blend a short light-leak/film-burn layer over it in screen/add mode with animated opacity. Sync the peak to the cut or the beat.",
+      "tags": [
+        "film",
+        "light-leak",
+        "overlay",
+        "transition"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/",
+      "he": {
+        "category": "שכבת אור",
+        "summary": "הבהוב אור/צריבה צבעונית שמתגלה מעל התמונה ומשמשת כמעבר או כטקסטורה קצרה.",
+        "when_to_use": "למעבר רך או לאופי אנלוגי; עדיף לא לכסות את רגע הפעולה החשוב.",
+        "recipe": "שומרים את השוט המקורי, ומערבבים מעליו שכבת light-leak/film-burn קצרה ב-screen/add עם opacity מונפשת; מסנכרנים את השיא לחיתוך או לביט.",
+        "tags": [
+          "film",
+          "light-leak",
+          "overlay",
+          "מעבר"
+        ]
+      }
+    },
+    {
+      "id": "wipe",
+      "name": "Wipe / mask reveal",
+      "aliases": [
+        "mask wipe",
+        "wipe transition",
+        "חשיפת מסכה"
+      ],
+      "category": "Transition",
+      "summary": "The next shot is revealed by a mask that moves across or down the frame, or follows a shape.",
+      "when_to_use": "When there is a line, movement or shape in the frame that can carry into the next shot.",
+      "recipe": "Animate a mask across the original shot sitting above the next shot. Aim the mask edge in the direction of body or camera movement and finish the reveal on the beat.",
+      "tags": [
+        "wipe",
+        "mask",
+        "transition"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/",
+      "he": {
+        "category": "מעבר",
+        "summary": "השוט הבא נחשף באמצעות מסכה שנעה לרוחב/לאורך הפריים או לפי צורה.",
+        "when_to_use": "כשיש קו, תנועה או צורה בפריים שאפשר להמשיך לתוך השוט הבא.",
+        "recipe": "מנפישים מסכה על פני השוט המקורי שמעל השוט הבא; אפשר לכוון את הקצה לכיוון תנועת הגוף/מצלמה ולסיים את הגילוי על הביט.",
+        "tags": [
+          "wipe",
+          "mask",
+          "מעבר"
+        ]
+      }
+    },
+    {
+      "id": "speed-ramp",
+      "name": "Speed ramp",
+      "aliases": [
+        "variable speed",
+        "ramping",
+        "רמפת מהירות"
+      ],
+      "category": "Timing/Speed",
+      "summary": "A gradual speed change within a shot: slowing down for a key moment and then speeding up, or the reverse.",
+      "when_to_use": "On action with clear movement, when the slowdown emphasizes a moment without hurting readability.",
+      "recipe": "Mark the action point in the original shot, plan speed changes with a smooth curve around it, and keep the motion continuous. Check the audio; if sync can't be kept, detach the source audio and use a licensed soundtrack or sound effect that was provided.",
+      "tags": [
+        "speed-ramp",
+        "slow-motion",
+        "rhythm"
+      ],
+      "reference": "https://ffmpeg.org/ffmpeg-filters.html#setpts_002c-asetpts",
+      "he": {
+        "category": "קצב/מהירות",
+        "summary": "שינוי הדרגתי במהירות בתוך שוט: האטה לרגע משמעותי ואז האצה, או להפך.",
+        "when_to_use": "בפעולה עם תנועה ברורה, כשההאטה מדגישה רגע ולא פוגעת בקריאות.",
+        "recipe": "מסמנים נקודת פעולה בשוט המקורי, מתכננים שינויי מהירות עם עקומה חלקה סביב הנקודה, ושומרים על רציפות תנועה. בודקים התאמת אודיו; אם אין אפשרות לשמור סנכרון, מנתקים את אודיו המקור ומשתמשים בפסקול/אפקט קול מורשה שסופק.",
+        "tags": [
+          "speed-ramp",
+          "slow-motion",
+          "קצב"
+        ]
+      }
+    },
+    {
+      "id": "rgb-split-glitch",
+      "name": "RGB split / chromatic glitch",
+      "aliases": [
+        "RGB split",
+        "chromatic aberration",
+        "color channel offset",
+        "הסטת ערוצים"
+      ],
+      "category": "Color distortion",
+      "summary": "A slight, separate offset of the RGB channels at the edges, sometimes as a short pulse with frame shake.",
+      "when_to_use": "For a brief moment of tension, energy or glitch; don't keep it strong for the whole video.",
+      "recipe": "Apply a subtle color-channel offset to the original shot for a few frames, intensify it at the peak and return to normal. A short jitter can be added, but don't hide the footage.",
+      "tags": [
+        "RGB",
+        "glitch",
+        "color",
+        "own-footage"
+      ],
+      "reference": "https://ffmpeg.org/ffmpeg-filters.html#chromashift",
+      "he": {
+        "category": "עיוות צבע",
+        "summary": "הסטה קלה ונפרדת של ערוצי RGB בקצוות, לפעמים בפולס קצר עם רעידת פריים.",
+        "when_to_use": "לרגע קצר של מתח, אנרגיה או glitch; לא להשאיר חזק לאורך כל הסרטון.",
+        "recipe": "מיישמים הסטת ערוצי צבע עדינה על השוט המקורי למשך מספר פריימים, מחזקים לרגע השיא ומחזירים לנורמלי; אפשר לצרף jitter קצר אך לא להסתיר את המצולם.",
+        "tags": [
+          "RGB",
+          "glitch",
+          "צבע",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "freeze-frame-hit",
+      "name": "Freeze frame with punch-in",
+      "aliases": [
+        "freeze frame",
+        "impact freeze",
+        "עצירת פריים"
+      ],
+      "category": "Emphasis",
+      "summary": "A short hold on a chosen frame, sometimes with scale, outline or a caption, then back to motion.",
+      "when_to_use": "On a reaction, pose or reveal that still reads when the motion stops.",
+      "recipe": "Freeze an existing frame from the original shot for a few frames, add a small punch-in or a short caption if needed, then continue or cut back into the motion on the beat.",
+      "tags": [
+        "freeze-frame",
+        "emphasis",
+        "beat-sync"
+      ],
+      "reference": "Common editing technique",
+      "he": {
+        "name": "Freeze-frame עם punch-in",
+        "category": "הדגשה",
+        "summary": "עצירה קצרה על פריים נבחר, לעתים עם scale, outline או כיתוב, ואז חזרה לתנועה.",
+        "when_to_use": "על תגובה/תנוחה/גילוי שמובן גם כשהתנועה נעצרת.",
+        "recipe": "מקפיאים פריים קיים מהשוט המקורי למשך כמה פריימים, מוסיפים punch-in קטן או כיתוב קצר לפי הצורך, ואז ממשיכים/חותכים להמשך התנועה על הביט.",
+        "tags": [
+          "freeze-frame",
+          "הדגשה",
+          "beat-sync"
+        ],
+        "reference": "טכניקת עריכה נפוצה"
+      }
+    },
+    {
+      "id": "shake-on-impact",
+      "name": "Camera shake on hit",
+      "aliases": [
+        "impact shake",
+        "shake transition",
+        "רעידת מצלמה"
+      ],
+      "category": "Camera motion",
+      "summary": "A short, controlled shift/rotation around a hit, landing or beat, with a fast decay.",
+      "when_to_use": "When the action in frame justifies a sense of impact; don't add it to every cut.",
+      "recipe": "On the original shot, add short non-periodic position/rotation offsets around the hit, decaying within a few frames. Check that the edges don't reveal empty areas.",
+      "tags": [
+        "shake",
+        "impact",
+        "beat-sync"
+      ],
+      "reference": "Common editing technique",
+      "he": {
+        "name": "Camera shake על hit",
+        "category": "תנועת מצלמה",
+        "summary": "הזזה/סיבוב קצר ומרוסן סביב מכה, נחיתה או ביט, עם דעיכה מהירה.",
+        "when_to_use": "כשהפעולה בפריים מצדיקה תחושת אימפקט; לא להוסיף לכל חיתוך.",
+        "recipe": "על השוט המקורי מוסיפים הזזות קצרות ולא מחזוריות של position/rotation סביב רגע ה-hit, עם דעיכה תוך כמה פריימים; בודקים שהקצוות לא חושפים אזורים ריקים.",
+        "tags": [
+          "shake",
+          "impact",
+          "beat-sync"
+        ],
+        "reference": "טכניקת עריכה נפוצה"
+      }
+    },
+    {
+      "id": "kinetic-text",
+      "name": "Kinetic text hit",
+      "aliases": [
+        "kinetic typography",
+        "animated text",
+        "טקסט קינטי"
+      ],
+      "category": "Typography",
+      "summary": "Words or labels enter with a short, punchy motion synced to the voice-over or beat.",
+      "when_to_use": "When there is a short message the user provided or approved; don't invent facts or text.",
+      "recipe": "Add text as an overlay above the original video with a fast entrance (slide/pop), a readable hold and a clean exit. Sync to the syllable or beat and keep safe margins for a vertical screen.",
+      "tags": [
+        "text",
+        "typography",
+        "beat-sync",
+        "overlay"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/",
+      "he": {
+        "category": "טיפוגרפיה",
+        "summary": "מילים או תוויות נכנסות בתנועה קצרה ומודגשת, מסונכרנת לקריינות/ביט.",
+        "when_to_use": "כשיש מסר קצר שהמשתמש סיפק או אישר; לא להמציא עובדות או טקסט.",
+        "recipe": "מוסיפים טקסט כ-overlay מעל הווידאו המקורי, עם כניסה מהירה (slide/pop), עצירה קריאה ויציאה נקייה; מסנכרנים להברה/ביט ומשאירים safe margins למסך אנכי.",
+        "tags": [
+          "text",
+          "typography",
+          "beat-sync",
+          "overlay"
+        ]
+      }
+    },
+    {
+      "id": "cross-dissolve",
+      "name": "Cross dissolve",
+      "aliases": [],
+      "category": "Transition",
+      "summary": "A soft overlapping fade between two shots",
+      "when_to_use": "A calm, unobtrusive transition",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a calm, unobtrusive transition.",
+      "tags": [
+        "transition",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/presentations/",
+      "he": {
+        "category": "מעבר",
+        "summary": "דעיכה חופפת ורכה בין שני שוטים",
+        "when_to_use": "מעבר רגוע ולא בולט",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. מעבר רגוע ולא בולט.",
+        "tags": [
+          "מעבר",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "fade-black",
+      "name": "Fade through black",
+      "aliases": [],
+      "category": "Transition",
+      "summary": "The shot fades to black and the next one opens from it",
+      "when_to_use": "To mark a pause or a scene change",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: to mark a pause or a scene change.",
+      "tags": [
+        "transition",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/presentations/",
+      "he": {
+        "category": "מעבר",
+        "summary": "השוט דועך לשחור והשני נפתח ממנו",
+        "when_to_use": "סימון הפסקה או שינוי סצנה",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. סימון הפסקה או שינוי סצנה.",
+        "tags": [
+          "מעבר",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "fade-white",
+      "name": "Fade through white",
+      "aliases": [],
+      "category": "Transition",
+      "summary": "A white fade/flash that reveals the next shot",
+      "when_to_use": "A bright or energetic transition",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a bright or energetic transition.",
+      "tags": [
+        "transition",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/presentations/",
+      "he": {
+        "category": "מעבר",
+        "summary": "דעיכה/הבזק לבן שחושף את השוט הבא",
+        "when_to_use": "מעבר בהיר או אנרגטי",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. מעבר בהיר או אנרגטי.",
+        "tags": [
+          "מעבר",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "fade-color",
+      "name": "Fade through color",
+      "aliases": [],
+      "category": "Transition",
+      "summary": "A transition through a chosen intermediate color",
+      "when_to_use": "To connect shots within a specific color palette",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: to connect shots within a specific color palette.",
+      "tags": [
+        "transition",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/presentations/",
+      "he": {
+        "category": "מעבר",
+        "summary": "מעבר דרך צבע ביניים שנבחר",
+        "when_to_use": "חיבור שוטים בפלטת צבע מסוימת",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. חיבור שוטים בפלטת צבע מסוימת.",
+        "tags": [
+          "מעבר",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "push-cut",
+      "name": "Push cut",
+      "aliases": [],
+      "category": "Transition",
+      "summary": "The next shot pushes the previous one out with a short flash",
+      "when_to_use": "A musical hit or an emphasized entrance",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a musical hit or an emphasized entrance.",
+      "tags": [
+        "transition",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/presentations/",
+      "he": {
+        "category": "מעבר",
+        "summary": "השוט הבא דוחף החוצה את הקודם עם flash קצר",
+        "when_to_use": "מכה מוזיקלית או כניסה מודגשת",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. מכה מוזיקלית או כניסה מודגשת.",
+        "tags": [
+          "מעבר",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "slide-directions",
+      "name": "Directional slides",
+      "aliases": [],
+      "category": "Transition",
+      "summary": "The next shot slides in horizontally or vertically",
+      "when_to_use": "Match the direction of motion and the format",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: match the direction of motion and the format.",
+      "tags": [
+        "transition",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/presentations/",
+      "he": {
+        "category": "מעבר",
+        "summary": "החלקה אופקית או אנכית של השוט הבא",
+        "when_to_use": "להתאים לכיוון התנועה ולפורמט",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. להתאים לכיוון התנועה ולפורמט.",
+        "tags": [
+          "מעבר",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "smooth-slide",
+      "name": "Smooth slide",
+      "aliases": [],
+      "category": "Transition",
+      "summary": "A slide with a soft/blurred edge",
+      "when_to_use": "When a hard slide feels stiff",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: when a hard slide feels stiff.",
+      "tags": [
+        "transition",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/presentations/",
+      "he": {
+        "category": "מעבר",
+        "summary": "החלקה עם קצה רך/blur",
+        "when_to_use": "כשהחלקה חדה מרגישה קשיחה",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. כשהחלקה חדה מרגישה קשיחה.",
+        "tags": [
+          "מעבר",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "wipe-directions",
+      "name": "Directional/diagonal wipe",
+      "aliases": [],
+      "category": "Transition",
+      "summary": "A mask reveals the next shot horizontally, vertically or diagonally",
+      "when_to_use": "To continue a line or movement from the frame",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: to continue a line or movement from the frame.",
+      "tags": [
+        "transition",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/presentations/",
+      "he": {
+        "category": "מעבר",
+        "summary": "מסכה חושפת את השוט הבא אופקית, אנכית או אלכסונית",
+        "when_to_use": "להמשיך קו/תנועה מתוך הפריים",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. להמשיך קו/תנועה מתוך הפריים.",
+        "tags": [
+          "מעבר",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "iris",
+      "name": "Iris / circle reveal",
+      "aliases": [],
+      "category": "Transition",
+      "summary": "A circular mask opens or closes around a point",
+      "when_to_use": "To direct attention to a detail",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: to direct attention to a detail.",
+      "tags": [
+        "transition",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/presentations/",
+      "he": {
+        "category": "מעבר",
+        "summary": "מסכה עגולה נפתחת או נסגרת סביב נקודה",
+        "when_to_use": "להפנות מבט לפרט",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. להפנות מבט לפרט.",
+        "tags": [
+          "מעבר",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "clock-wipe",
+      "name": "Clock wipe",
+      "aliases": [],
+      "category": "Transition",
+      "summary": "A radial reveal that sweeps like a clock hand",
+      "when_to_use": "A graphic or timer-style transition",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a graphic or timer-style transition.",
+      "tags": [
+        "transition",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/presentations/",
+      "he": {
+        "category": "מעבר",
+        "summary": "חשיפה רדיאלית בסריקה מעגלית",
+        "when_to_use": "מעבר גרפי/טיימר",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. מעבר גרפי/טיימר.",
+        "tags": [
+          "מעבר",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "flip",
+      "name": "Flip transition",
+      "aliases": [],
+      "category": "Transition",
+      "summary": "The shot flips around an axis like a card",
+      "when_to_use": "A playful, deliberate transition",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a playful, deliberate transition.",
+      "tags": [
+        "transition",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/presentations/",
+      "he": {
+        "category": "מעבר",
+        "summary": "השוט מתהפך סביב ציר כמו כרטיס",
+        "when_to_use": "מעבר משחקי ומכוון",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. מעבר משחקי ומכוון.",
+        "tags": [
+          "מעבר",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "zoom-in-out",
+      "name": "Zoom in/out transition",
+      "aliases": [],
+      "category": "Transition",
+      "summary": "The outgoing shot zooms in and the incoming one zooms out, or the reverse",
+      "when_to_use": "To connect shots with inward/outward motion",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: to connect shots with inward/outward motion.",
+      "tags": [
+        "transition",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/presentations/",
+      "he": {
+        "category": "מעבר",
+        "summary": "השוט היוצא מתקרב והנכנס מתרחק או להפך",
+        "when_to_use": "לחבר שוטים עם תנועה פנימה/החוצה",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. לחבר שוטים עם תנועה פנימה/החוצה.",
+        "tags": [
+          "מעבר",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "dreamy-zoom",
+      "name": "Dreamy zoom",
+      "aliases": [],
+      "category": "Transition",
+      "summary": "A zoom with a gentle rotation and a white flash",
+      "when_to_use": "A dreamy, music-video transition",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a dreamy, music-video transition.",
+      "tags": [
+        "transition",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/presentations/",
+      "he": {
+        "category": "מעבר",
+        "summary": "zoom עם סיבוב עדין והבזק לבן",
+        "when_to_use": "מעבר dreamy/קליפי",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. מעבר dreamy/קליפי.",
+        "tags": [
+          "מעבר",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "linear-blur",
+      "name": "Directional blur transition",
+      "aliases": [],
+      "category": "Transition",
+      "summary": "Motion blur in the direction of the transition",
+      "when_to_use": "To add speed to a slide or whip",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: to add speed to a slide or whip.",
+      "tags": [
+        "transition",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/presentations/",
+      "he": {
+        "category": "מעבר",
+        "summary": "טשטוש תנועתי בכיוון המעבר",
+        "when_to_use": "להוסיף מהירות ל-slide/whip",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. להוסיף מהירות ל-slide/whip.",
+        "tags": [
+          "מעבר",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "book-flip",
+      "name": "Book/page flip",
+      "aliases": [],
+      "category": "Transition",
+      "summary": "A page-turn style swap",
+      "when_to_use": "Storytelling or an album feel",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: storytelling or an album feel.",
+      "tags": [
+        "transition",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/presentations/",
+      "he": {
+        "category": "מעבר",
+        "summary": "החלפה דמוית קיפול דף",
+        "when_to_use": "סיפור או אלבום",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. סיפור או אלבום.",
+        "tags": [
+          "מעבר",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "glowing-dissolve",
+      "name": "Glow dissolve",
+      "aliases": [],
+      "category": "Transition",
+      "summary": "A dissolve with a glowing edge between the shots",
+      "when_to_use": "A luminous look",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a luminous look.",
+      "tags": [
+        "transition",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/presentations/",
+      "he": {
+        "category": "מעבר",
+        "summary": "התמוססות עם קצה זוהר בין השוטים",
+        "when_to_use": "מראה luminous",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. מראה luminous.",
+        "tags": [
+          "מעבר",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "ripple",
+      "name": "Ripple distortion",
+      "aliases": [],
+      "category": "Transition",
+      "summary": "A ripple distortion that advances during the transition",
+      "when_to_use": "Water, dreams or deliberate distortion",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: water, dreams or deliberate distortion.",
+      "tags": [
+        "transition",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/presentations/",
+      "he": {
+        "category": "מעבר",
+        "summary": "גל עיוות מתקדם בזמן מעבר",
+        "when_to_use": "מים/חלום/עיוות מכוון",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. מים/חלום/עיוות מכוון.",
+        "tags": [
+          "מעבר",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "crosswarp",
+      "name": "Crosswarp",
+      "aliases": [],
+      "category": "Transition",
+      "summary": "Both shots stretch and warp up to the cut",
+      "when_to_use": "A fast, dynamic transition",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a fast, dynamic transition.",
+      "tags": [
+        "transition",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/presentations/",
+      "he": {
+        "category": "מעבר",
+        "summary": "שני השוטים נמתחים ומתעוותים עד החיתוך",
+        "when_to_use": "מעבר מהיר ודינמי",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. מעבר מהיר ודינמי.",
+        "tags": [
+          "מעבר",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "crosszoom",
+      "name": "Crosszoom",
+      "aliases": [],
+      "category": "Transition",
+      "summary": "Both shots move through the center with zoom/blur",
+      "when_to_use": "A strong beat or a scene change",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a strong beat or a scene change.",
+      "tags": [
+        "transition",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/presentations/",
+      "he": {
+        "category": "מעבר",
+        "summary": "שני השוטים נעים דרך מרכז עם zoom/blur",
+        "when_to_use": "ביט חזק או החלפת סצנה",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. ביט חזק או החלפת סצנה.",
+        "tags": [
+          "מעבר",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "perspective-swap",
+      "name": "Perspective swap",
+      "aliases": [],
+      "category": "Transition",
+      "summary": "A swap with perspective/reflection",
+      "when_to_use": "A stylized 3D transition",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a stylized 3D transition.",
+      "tags": [
+        "transition",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/presentations/",
+      "he": {
+        "category": "מעבר",
+        "summary": "החלפה עם פרספקטיבה/השתקפות",
+        "when_to_use": "מעבר תלת-ממדי מסוגנן",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. מעבר תלת-ממדי מסוגנן.",
+        "tags": [
+          "מעבר",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "blur-slide",
+      "name": "Blur slide",
+      "aliases": [],
+      "category": "Transition",
+      "summary": "Both shots slide with motion blur",
+      "when_to_use": "A fast whip",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a fast whip.",
+      "tags": [
+        "transition",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/presentations/",
+      "he": {
+        "category": "מעבר",
+        "summary": "שני השוטים מחליקים עם motion blur",
+        "when_to_use": "whip מהיר",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. whip מהיר.",
+        "tags": [
+          "מעבר",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "cube-rotate",
+      "name": "Cube rotate",
+      "aliases": [],
+      "category": "Transition",
+      "summary": "The shots rotate like the faces of a cube",
+      "when_to_use": "A bold effect, not a default",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a bold effect, not a default.",
+      "tags": [
+        "transition",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/transitions/presentations/",
+      "he": {
+        "category": "מעבר",
+        "summary": "השוטים מסתובבים כפאות קובייה",
+        "when_to_use": "אפקט בולט, לא כברירת מחדל",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. אפקט בולט, לא כברירת מחדל.",
+        "tags": [
+          "מעבר",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "xfade-family",
+      "name": "FFmpeg xfade families",
+      "aliases": [],
+      "category": "Transition",
+      "summary": "FFmpeg includes fade, wipes in eight directions, slides, circles, diagonals, slices, squeeze, dissolve, pixelize, blur and radial",
+      "when_to_use": "Pick a variant to match the motion; the two shots need to overlap",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: pick a variant to match the motion; the two shots need to overlap.",
+      "tags": [
+        "transition",
+        "own-footage"
+      ],
+      "reference": "https://ffmpeg.org/ffmpeg-filters.html",
+      "he": {
+        "category": "מעבר",
+        "summary": "FFmpeg כולל fade, wipes בשמונה כיוונים, slides, circles, diagonals, slices, squeeze, dissolve, pixelize, blur ו-radial",
+        "when_to_use": "בחירת וריאנט לפי התנועה; שני שוטים צריכים חפיפה",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. בחירת וריאנט לפי התנועה; שני שוטים צריכים חפיפה.",
+        "tags": [
+          "מעבר",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "brightness-pulse",
+      "name": "Brightness pulse",
+      "aliases": [],
+      "category": "Color/Exposure",
+      "summary": "A short brightness pulse and back to the original exposure",
+      "when_to_use": "Syncing to the beat",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: syncing to the beat.",
+      "tags": [
+        "color-exposure",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "צבע/חשיפה",
+        "summary": "פולס בהירות קצר וחזרה לחשיפה המקורית",
+        "when_to_use": "סנכרון לביט",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. סנכרון לביט.",
+        "tags": [
+          "צבע-חשיפה",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "contrast-hit",
+      "name": "Contrast hit",
+      "aliases": [],
+      "category": "Color/Exposure",
+      "summary": "A momentary jump in contrast",
+      "when_to_use": "Emphasizing a hit or cut",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: emphasizing a hit or cut.",
+      "tags": [
+        "color-exposure",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "צבע/חשיפה",
+        "summary": "קפיצה רגעית בקונטרסט",
+        "when_to_use": "הדגשת hit/cut",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. הדגשת hit/cut.",
+        "tags": [
+          "צבע-חשיפה",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "color-correction",
+      "name": "Color correction",
+      "aliases": [],
+      "category": "Color/Exposure",
+      "summary": "Correcting exposure, contrast, saturation and temperature",
+      "when_to_use": "Matching color between shots",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: matching color between shots.",
+      "tags": [
+        "color-exposure",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "צבע/חשיפה",
+        "summary": "תיקון exposure, contrast, saturation וטמפרטורה",
+        "when_to_use": "התאמת צבע בין שוטים",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. התאמת צבע בין שוטים.",
+        "tags": [
+          "צבע-חשיפה",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "exposure-ramp",
+      "name": "Exposure ramp",
+      "aliases": [],
+      "category": "Color/Exposure",
+      "summary": "A gradual or pulsed exposure change",
+      "when_to_use": "A bright entrance or exit",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a bright entrance or exit.",
+      "tags": [
+        "color-exposure",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "צבע/חשיפה",
+        "summary": "שינוי exposure מדורג או בפולס",
+        "when_to_use": "כניסה/יציאה בהירה",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. כניסה/יציאה בהירה.",
+        "tags": [
+          "צבע-חשיפה",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "selective-monochrome",
+      "name": "Selective monochrome",
+      "aliases": [],
+      "category": "Color/Exposure",
+      "summary": "A brief switch to black-and-white or a single color",
+      "when_to_use": "Dramatic emphasis",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: dramatic emphasis.",
+      "tags": [
+        "color-exposure",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "צבע/חשיפה",
+        "summary": "מעבר קצר לשחור-לבן/צבע",
+        "when_to_use": "הדגשה דרמטית",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. הדגשה דרמטית.",
+        "tags": [
+          "צבע-חשיפה",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "hue-shift",
+      "name": "Hue shift",
+      "aliases": [],
+      "category": "Color/Exposure",
+      "summary": "A gradual or brief hue rotation",
+      "when_to_use": "A glitch or a colorful change",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a glitch or a colorful change.",
+      "tags": [
+        "color-exposure",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "צבע/חשיפה",
+        "summary": "סיבוב גוון מדורג או קצר",
+        "when_to_use": "glitch או שינוי צבעוני",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. glitch או שינוי צבעוני.",
+        "tags": [
+          "צבע-חשיפה",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "negative-flash",
+      "name": "Invert / negative flash",
+      "aliases": [],
+      "category": "Color/Exposure",
+      "summary": "A momentary color inversion",
+      "when_to_use": "A short glitch",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a short glitch.",
+      "tags": [
+        "color-exposure",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "צבע/חשיפה",
+        "summary": "היפוך צבע נקודתי",
+        "when_to_use": "glitch קצר",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. glitch קצר.",
+        "tags": [
+          "צבע-חשיפה",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "levels-gamma",
+      "name": "Levels/gamma",
+      "aliases": [],
+      "category": "Color/Exposure",
+      "summary": "Control over black point, white point and gamma",
+      "when_to_use": "Tonal adjustment",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: tonal adjustment.",
+      "tags": [
+        "color-exposure",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "צבע/חשיפה",
+        "summary": "שליטה ב-black point, white point ו-gamma",
+        "when_to_use": "כוונון טונאלי",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. כוונון טונאלי.",
+        "tags": [
+          "צבע-חשיפה",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "lut-look",
+      "name": "LUT look",
+      "aliases": [],
+      "category": "Color/Exposure",
+      "summary": "Overall color mapping with a LUT",
+      "when_to_use": "A consistent look after base correction",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a consistent look after base correction.",
+      "tags": [
+        "color-exposure",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "צבע/חשיפה",
+        "summary": "מיפוי צבעים כולל באמצעות LUT",
+        "when_to_use": "לוק עקבי אחרי תיקון בסיס",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. לוק עקבי אחרי תיקון בסיס.",
+        "tags": [
+          "צבע-חשיפה",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "saturation-pulse",
+      "name": "Saturation pulse",
+      "aliases": [],
+      "category": "Color/Exposure",
+      "summary": "Briefly boosting or reducing saturation",
+      "when_to_use": "Emphasizing a beat or a transition",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: emphasizing a beat or a transition.",
+      "tags": [
+        "color-exposure",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "צבע/חשיפה",
+        "summary": "הגברת/הפחתת רוויה לזמן קצר",
+        "when_to_use": "הדגשת beat או מעבר",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. הדגשת beat או מעבר.",
+        "tags": [
+          "צבע-חשיפה",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "shadow-highlight",
+      "name": "Shadows/highlights",
+      "aliases": [],
+      "category": "Color/Exposure",
+      "summary": "Adjusting detail in dark and bright areas",
+      "when_to_use": "Recovering detail in a high-contrast shot",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: recovering detail in a high-contrast shot.",
+      "tags": [
+        "color-exposure",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "צבע/חשיפה",
+        "summary": "התאמת פרטים באזורים כהים ובהירים",
+        "when_to_use": "הצלת פרטים ב-shot קונטרסטי",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. הצלת פרטים ב-shot קונטרסטי.",
+        "tags": [
+          "צבע-חשיפה",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "duotone",
+      "name": "Duotone",
+      "aliases": [],
+      "category": "Color/Exposure",
+      "summary": "Mapping shadows and highlights to two colors",
+      "when_to_use": "A graphic look on footage",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a graphic look on footage.",
+      "tags": [
+        "color-exposure",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "צבע/חשיפה",
+        "summary": "מיפוי הצללים והאורות לשני צבעים",
+        "when_to_use": "לוק גרפי על צילום",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. לוק גרפי על צילום.",
+        "tags": [
+          "צבע-חשיפה",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "color-tint",
+      "name": "Color tint",
+      "aliases": [],
+      "category": "Color/Exposure",
+      "summary": "A controlled bias toward one color",
+      "when_to_use": "Matching a color palette",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: matching a color palette.",
+      "tags": [
+        "color-exposure",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "צבע/חשיפה",
+        "summary": "הטיה מבוקרת לצבע אחד",
+        "when_to_use": "התאמת פלטת צבע",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. התאמת פלטת צבע.",
+        "tags": [
+          "צבע-חשיפה",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "white-balance",
+      "name": "White balance shift",
+      "aliases": [],
+      "category": "Color/Exposure",
+      "summary": "Correcting or shifting warmth/coolness and tint",
+      "when_to_use": "Fixing lighting or a warm/cool shift",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: fixing lighting or a warm/cool shift.",
+      "tags": [
+        "color-exposure",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "צבע/חשיפה",
+        "summary": "תיקון או שינוי חום/קרירות ו-tint",
+        "when_to_use": "תיקון תאורות או warm/cool shift",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. תיקון תאורות או warm/cool shift.",
+        "tags": [
+          "צבע-חשיפה",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "vibrance",
+      "name": "Vibrance",
+      "aliases": [],
+      "category": "Color/Exposure",
+      "summary": "Selectively boosting muted colors",
+      "when_to_use": "Adding life without oversaturation",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: adding life without oversaturation.",
+      "tags": [
+        "color-exposure",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "צבע/חשיפה",
+        "summary": "הגברת צבעים עמומים באופן סלקטיבי",
+        "when_to_use": "להוסיף חיות בלי oversaturation",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. להוסיף חיות בלי oversaturation.",
+        "tags": [
+          "צבע-חשיפה",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "thermal",
+      "name": "Thermal/heat map",
+      "aliases": [],
+      "category": "Color/Exposure",
+      "summary": "Thermal-style color mapping on the shot",
+      "when_to_use": "A graphic or experimental moment",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a graphic or experimental moment.",
+      "tags": [
+        "color-exposure",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "צבע/חשיפה",
+        "summary": "מיפוי צבעים דמוי thermal על השוט",
+        "when_to_use": "רגע גרפי/ניסיוני",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. רגע גרפי/ניסיוני.",
+        "tags": [
+          "צבע-חשיפה",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "gaussian-blur",
+      "name": "Gaussian blur",
+      "aliases": [],
+      "category": "Blur/Glow",
+      "summary": "A soft blur with controlled strength",
+      "when_to_use": "Softening or a transition",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: softening or a transition.",
+      "tags": [
+        "blur-glow",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טשטוש/זוהר",
+        "summary": "טשטוש רך בעוצמה נשלטת",
+        "when_to_use": "ריכוך או מעבר",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. ריכוך או מעבר.",
+        "tags": [
+          "blur-glow",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "progressive-blur",
+      "name": "Progressive blur",
+      "aliases": [],
+      "category": "Blur/Glow",
+      "summary": "Blur that varies along a gradient",
+      "when_to_use": "Keeping one area in focus",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: keeping one area in focus.",
+      "tags": [
+        "blur-glow",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טשטוש/זוהר",
+        "summary": "טשטוש משתנה לאורך גרדיאנט",
+        "when_to_use": "מיקוד אזור חד",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. מיקוד אזור חד.",
+        "tags": [
+          "blur-glow",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "radial-blur",
+      "name": "Radial progressive blur",
+      "aliases": [],
+      "category": "Blur/Glow",
+      "summary": "Blur around a point or ellipse",
+      "when_to_use": "Focus or a sense of zoom",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: focus or a sense of zoom.",
+      "tags": [
+        "blur-glow",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טשטוש/זוהר",
+        "summary": "טשטוש סביב נקודה/אליפסה",
+        "when_to_use": "מיקוד או תחושת zoom",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. מיקוד או תחושת zoom.",
+        "tags": [
+          "blur-glow",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "region-blur",
+      "name": "Region blur",
+      "aliases": [],
+      "category": "Blur/Glow",
+      "summary": "Blurring a chosen region only",
+      "when_to_use": "Hiding something or focusing attention",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: hiding something or focusing attention.",
+      "tags": [
+        "blur-glow",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טשטוש/זוהר",
+        "summary": "טשטוש אזור נבחר בלבד",
+        "when_to_use": "הסתרה או מיקוד",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. הסתרה או מיקוד.",
+        "tags": [
+          "blur-glow",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "drop-shadow",
+      "name": "Drop shadow",
+      "aliases": [],
+      "category": "Blur/Glow",
+      "summary": "A soft shadow beneath an isolated element or text",
+      "when_to_use": "Overlays or cutouts",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: overlays or cutouts.",
+      "tags": [
+        "blur-glow",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טשטוש/זוהר",
+        "summary": "צל רך מתחת לאלמנט מבודד/טקסט",
+        "when_to_use": "overlay או cutout",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. overlay או cutout.",
+        "tags": [
+          "blur-glow",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "glow-halo",
+      "name": "Glow / soft halo",
+      "aliases": [],
+      "category": "Blur/Glow",
+      "summary": "A soft halo around highlights",
+      "when_to_use": "Dreamy lighting",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: dreamy lighting.",
+      "tags": [
+        "blur-glow",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טשטוש/זוהר",
+        "summary": "הילה רכה סביב highlights",
+        "when_to_use": "תאורה dreamy",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. תאורה dreamy.",
+        "tags": [
+          "blur-glow",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "outline",
+      "name": "Outline / edge stroke",
+      "aliases": [],
+      "category": "Blur/Glow",
+      "summary": "A stroke around a mask or element",
+      "when_to_use": "Text or an isolated object",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: text or an isolated object.",
+      "tags": [
+        "blur-glow",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טשטוש/זוהר",
+        "summary": "קו מתאר סביב מסכה/אלמנט",
+        "when_to_use": "טקסט או אובייקט מבודד",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. טקסט או אובייקט מבודד.",
+        "tags": [
+          "blur-glow",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "light-trail",
+      "name": "Light trail",
+      "aliases": [],
+      "category": "Blur/Glow",
+      "summary": "A light/motion trail in a given direction",
+      "when_to_use": "Fast movement",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: fast movement.",
+      "tags": [
+        "blur-glow",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טשטוש/זוהר",
+        "summary": "שובל אור/תנועה בכיוון מסוים",
+        "when_to_use": "תנועה מהירה",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. תנועה מהירה.",
+        "tags": [
+          "blur-glow",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "evolve-reveal",
+      "name": "Evolve directional reveal",
+      "aliases": [],
+      "category": "Reveal/Mask",
+      "summary": "A progressive mask reveals a layer in a given direction",
+      "when_to_use": "Revealing text or the next shot",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: revealing text or the next shot.",
+      "tags": [
+        "reveal-mask",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "חשיפה/מסכה",
+        "summary": "מסכה מתקדמת חושפת שכבה בכיוון מסוים",
+        "when_to_use": "גילוי טקסט/שוט הבא",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. גילוי טקסט/שוט הבא.",
+        "tags": [
+          "reveal-mask",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "tear-reveal",
+      "name": "Tear reveal",
+      "aliases": [],
+      "category": "Reveal/Mask",
+      "summary": "A torn edge reveals the layer underneath",
+      "when_to_use": "A paper/editorial transition",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a paper/editorial transition.",
+      "tags": [
+        "reveal-mask",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "חשיפה/מסכה",
+        "summary": "קצה קרוע חושף את השכבה שמתחת",
+        "when_to_use": "מעבר paper/editorial",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. מעבר paper/editorial.",
+        "tags": [
+          "reveal-mask",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "venetian-blinds",
+      "name": "Venetian blinds",
+      "aliases": [],
+      "category": "Reveal/Mask",
+      "summary": "A reveal in parallel stripes",
+      "when_to_use": "A short graphic transition",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a short graphic transition.",
+      "tags": [
+        "reveal-mask",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "חשיפה/מסכה",
+        "summary": "חשיפה בפסים מקבילים",
+        "when_to_use": "מעבר גרפי קצר",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. מעבר גרפי קצר.",
+        "tags": [
+          "reveal-mask",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "mirror",
+      "name": "Mirror reflection",
+      "aliases": [],
+      "category": "Transform/Distort",
+      "summary": "Horizontal or vertical mirroring of the shot",
+      "when_to_use": "Symmetry or a change of direction",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: symmetry or a change of direction.",
+      "tags": [
+        "transform-distort",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טרנספורמציה/עיוות",
+        "summary": "שיקוף אופקי או אנכי של השוט",
+        "when_to_use": "סימטריה/שינוי כיוון",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. סימטריה/שינוי כיוון.",
+        "tags": [
+          "transform-distort",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "animated-scale",
+      "name": "Animated scale/position",
+      "aliases": [],
+      "category": "Transform/Distort",
+      "summary": "Animating scale/position on the original shot",
+      "when_to_use": "A punch-in or Ken Burns move",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a punch-in or Ken Burns move.",
+      "tags": [
+        "transform-distort",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טרנספורמציה/עיוות",
+        "summary": "הנפשת scale/position על ה-shot המקורי",
+        "when_to_use": "punch-in או Ken Burns",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. punch-in או Ken Burns.",
+        "tags": [
+          "transform-distort",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "tile",
+      "name": "Tile/repeat",
+      "aliases": [],
+      "category": "Transform/Distort",
+      "summary": "Tiling/repeating the source frame",
+      "when_to_use": "A stylized glitch",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a stylized glitch.",
+      "tags": [
+        "transform-distort",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טרנספורמציה/עיוות",
+        "summary": "ריצוף/שכפול של מקור הפריים",
+        "when_to_use": "glitch מסוגנן",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. glitch מסוגנן.",
+        "tags": [
+          "transform-distort",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "pixel-translate",
+      "name": "XY pixel translate",
+      "aliases": [],
+      "category": "Transform/Distort",
+      "summary": "Pixel offsets along the axes",
+      "when_to_use": "Jitter or glitch",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: jitter or glitch.",
+      "tags": [
+        "transform-distort",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טרנספורמציה/עיוות",
+        "summary": "הזזה פיקסלית בצירים",
+        "when_to_use": "jitter/glitch",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. jitter/glitch.",
+        "tags": [
+          "transform-distort",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "barrel",
+      "name": "Barrel distortion",
+      "aliases": [],
+      "category": "Transform/Distort",
+      "summary": "Wide-lens barrel distortion",
+      "when_to_use": "POV or action",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: POV or action.",
+      "tags": [
+        "transform-distort",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טרנספורמציה/עיוות",
+        "summary": "עיוות עדשה רחבה",
+        "when_to_use": "POV/action",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. POV/action.",
+        "tags": [
+          "transform-distort",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "chromatic-aberration",
+      "name": "Chromatic aberration",
+      "aliases": [],
+      "category": "Transform/Distort",
+      "summary": "A small RGB offset, mostly at the edges",
+      "when_to_use": "A short glitch",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a short glitch.",
+      "tags": [
+        "transform-distort",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טרנספורמציה/עיוות",
+        "summary": "הסטת RGB קטנה בעיקר בקצוות",
+        "when_to_use": "glitch קצר",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. glitch קצר.",
+        "tags": [
+          "transform-distort",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "fisheye",
+      "name": "Fisheye",
+      "aliases": [],
+      "category": "Transform/Distort",
+      "summary": "Wide-angle/fisheye lens distortion",
+      "when_to_use": "POV or action",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: POV or action.",
+      "tags": [
+        "transform-distort",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טרנספורמציה/עיוות",
+        "summary": "עיוות עדשה רחבה/דג-עין",
+        "when_to_use": "POV/אקשן",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. POV/אקשן.",
+        "tags": [
+          "transform-distort",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "corner-pin",
+      "name": "Corner pin/screen replace",
+      "aliases": [],
+      "category": "Transform/Distort",
+      "summary": "Fitting the corners to a plane in perspective",
+      "when_to_use": "Pinning onto an existing screen or sign",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: pinning onto an existing screen or sign.",
+      "tags": [
+        "transform-distort",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טרנספורמציה/עיוות",
+        "summary": "התאמת פינות למישור בפרספקטיבה",
+        "when_to_use": "הצמדה למסך/שלט קיים",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. הצמדה למסך/שלט קיים.",
+        "tags": [
+          "transform-distort",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "wave-distort",
+      "name": "Wave distortion",
+      "aliases": [],
+      "category": "Transform/Distort",
+      "summary": "A sinusoidal wave distortion",
+      "when_to_use": "Water or dreams",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: water or dreams.",
+      "tags": [
+        "transform-distort",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טרנספורמציה/עיוות",
+        "summary": "עיוות גלי סינוסואידלי",
+        "when_to_use": "מים/חלום",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. מים/חלום.",
+        "tags": [
+          "transform-distort",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "skew",
+      "name": "Skew/shear",
+      "aliases": [],
+      "category": "Transform/Distort",
+      "summary": "Shearing the frame on one or two axes",
+      "when_to_use": "A motion accent",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a motion accent.",
+      "tags": [
+        "transform-distort",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טרנספורמציה/עיוות",
+        "summary": "הטיית הפריים בציר אחד/שניים",
+        "when_to_use": "אקסנט תנועתי",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. אקסנט תנועתי.",
+        "tags": [
+          "transform-distort",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "film-grain",
+      "name": "Film grain/noise",
+      "aliases": [],
+      "category": "Texture/Stylize",
+      "summary": "Subtle grain over the footage",
+      "when_to_use": "An analog look",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: an analog look.",
+      "tags": [
+        "texture-stylize",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טקסטורה/סגנון",
+        "summary": "גרעיניות עדינה מעל הצילום",
+        "when_to_use": "לוק אנלוגי",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. לוק אנלוגי.",
+        "tags": [
+          "texture-stylize",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "halftone",
+      "name": "Halftone",
+      "aliases": [],
+      "category": "Texture/Stylize",
+      "summary": "Converting tones into print dots",
+      "when_to_use": "Comic or pop-art",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: comic or pop-art.",
+      "tags": [
+        "texture-stylize",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טקסטורה/סגנון",
+        "summary": "המרת טונים לנקודות דפוס",
+        "when_to_use": "קומיקס/פופ-art",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. קומיקס/פופ-art.",
+        "tags": [
+          "texture-stylize",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "dot-grid",
+      "name": "Dot grid",
+      "aliases": [],
+      "category": "Texture/Stylize",
+      "summary": "A dot mask based on the source colors",
+      "when_to_use": "A graphic layer",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a graphic layer.",
+      "tags": [
+        "texture-stylize",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טקסטורה/סגנון",
+        "summary": "מסכת נקודות שמבוססת על צבעי המקור",
+        "when_to_use": "שכבת גרפיקה",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. שכבת גרפיקה.",
+        "tags": [
+          "texture-stylize",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "paper-texture",
+      "name": "Paper texture",
+      "aliases": [],
+      "category": "Texture/Stylize",
+      "summary": "A paper texture over the footage",
+      "when_to_use": "Editorial or collage",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: editorial or collage.",
+      "tags": [
+        "texture-stylize",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טקסטורה/סגנון",
+        "summary": "טקסטורת נייר מעל הצילום",
+        "when_to_use": "editorial/collage",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. editorial/collage.",
+        "tags": [
+          "texture-stylize",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "emboss",
+      "name": "Emboss",
+      "aliases": [],
+      "category": "Texture/Stylize",
+      "summary": "A relief-like edge emboss",
+      "when_to_use": "A graphic moment",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a graphic moment.",
+      "tags": [
+        "texture-stylize",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טקסטורה/סגנון",
+        "summary": "הבלטת קצוות דמוית תבליט",
+        "when_to_use": "רגע גרפי",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. רגע גרפי.",
+        "tags": [
+          "texture-stylize",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "scanlines",
+      "name": "Scanlines",
+      "aliases": [],
+      "category": "Texture/Stylize",
+      "summary": "Horizontal CRT-style lines",
+      "when_to_use": "Retro or glitch",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: retro or glitch.",
+      "tags": [
+        "texture-stylize",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טקסטורה/סגנון",
+        "summary": "קווים אופקיים בסגנון CRT",
+        "when_to_use": "retro/glitch",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. retro/glitch.",
+        "tags": [
+          "texture-stylize",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "noise-displacement",
+      "name": "Noise displacement",
+      "aliases": [],
+      "category": "Texture/Stylize",
+      "summary": "Local distortion driven by noise",
+      "when_to_use": "A short glitch",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a short glitch.",
+      "tags": [
+        "texture-stylize",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טקסטורה/סגנון",
+        "summary": "עיוות מקומי מונע noise",
+        "when_to_use": "glitch קצר",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. glitch קצר.",
+        "tags": [
+          "texture-stylize",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "pixel-dissolve",
+      "name": "Pixel dissolve",
+      "aliases": [],
+      "category": "Texture/Stylize",
+      "summary": "Gradual breakup/appearance in pixels",
+      "when_to_use": "A digital transition",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a digital transition.",
+      "tags": [
+        "texture-stylize",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טקסטורה/סגנון",
+        "summary": "התפרקות/הופעה הדרגתית בפיקסלים",
+        "when_to_use": "מעבר דיגיטלי",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. מעבר דיגיטלי.",
+        "tags": [
+          "texture-stylize",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "pixelate",
+      "name": "Pixelate",
+      "aliases": [],
+      "category": "Texture/Stylize",
+      "summary": "Enlarged pixels / a low-res look",
+      "when_to_use": "Glitch or stylized hiding",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: glitch or stylized hiding.",
+      "tags": [
+        "texture-stylize",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טקסטורה/סגנון",
+        "summary": "הגדלת פיקסלים/מראה low-res",
+        "when_to_use": "glitch/הסתרה סגנונית",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. glitch/הסתרה סגנונית.",
+        "tags": [
+          "texture-stylize",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "vignette",
+      "name": "Vignette",
+      "aliases": [],
+      "category": "Texture/Stylize",
+      "summary": "Moderate darkening of the edges",
+      "when_to_use": "Focus on the center",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: focus on the center.",
+      "tags": [
+        "texture-stylize",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טקסטורה/סגנון",
+        "summary": "הכהיית קצוות מתונה",
+        "when_to_use": "מיקוד במרכז",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. מיקוד במרכז.",
+        "tags": [
+          "texture-stylize",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "shine-sweep",
+      "name": "Shine sweep",
+      "aliases": [],
+      "category": "Texture/Stylize",
+      "summary": "A glossy highlight sweeps across an object or text",
+      "when_to_use": "A filmed product or logo, with a mask",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a filmed product or logo, with a mask.",
+      "tags": [
+        "texture-stylize",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טקסטורה/סגנון",
+        "summary": "היילייט מבריק סורק אובייקט/טקסט",
+        "when_to_use": "מוצר/לוגו מצולם עם מסכה",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. מוצר/לוגו מצולם עם מסכה.",
+        "tags": [
+          "texture-stylize",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "roughen-edges",
+      "name": "Roughen edges",
+      "aliases": [],
+      "category": "Texture/Stylize",
+      "summary": "Rough, organic mask edges",
+      "when_to_use": "Cutouts or paper looks",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: cutouts or paper looks.",
+      "tags": [
+        "texture-stylize",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טקסטורה/סגנון",
+        "summary": "קצוות מסכה מחוספסים/אורגניים",
+        "when_to_use": "cutout/נייר",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. cutout/נייר.",
+        "tags": [
+          "texture-stylize",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "speckle",
+      "name": "Speckle/dust",
+      "aliases": [],
+      "category": "Texture/Stylize",
+      "summary": "Dust or small specks over the image",
+      "when_to_use": "A subtle film texture",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a subtle film texture.",
+      "tags": [
+        "texture-stylize",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טקסטורה/סגנון",
+        "summary": "אבק/נקודות קטנות מעל התמונה",
+        "when_to_use": "טקסטורת film עדינה",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. טקסטורת film עדינה.",
+        "tags": [
+          "texture-stylize",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "shrinkwrap",
+      "name": "Shrinkwrap/plastic sheen",
+      "aliases": [],
+      "category": "Texture/Stylize",
+      "summary": "A plastic highlight and distortion around shapes",
+      "when_to_use": "An experimental look",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: an experimental look.",
+      "tags": [
+        "texture-stylize",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טקסטורה/סגנון",
+        "summary": "היילייט ועיוות פלסטי סביב צורות",
+        "when_to_use": "לוק ניסיוני",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. לוק ניסיוני.",
+        "tags": [
+          "texture-stylize",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "starburst",
+      "name": "Starburst rays",
+      "aliases": [],
+      "category": "Texture/Stylize",
+      "summary": "Rays around a point of light",
+      "when_to_use": "A glowing or comic moment",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a glowing or comic moment.",
+      "tags": [
+        "texture-stylize",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טקסטורה/סגנון",
+        "summary": "קרניים סביב נקודת אור",
+        "when_to_use": "רגע זוהר/קומיקס",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. רגע זוהר/קומיקס.",
+        "tags": [
+          "texture-stylize",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "light-leak",
+      "name": "Procedural light leak",
+      "aliases": [],
+      "category": "Texture/Stylize",
+      "summary": "A colored light leak as an overlay",
+      "when_to_use": "A transition or an analog look",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: a transition or an analog look.",
+      "tags": [
+        "texture-stylize",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טקסטורה/סגנון",
+        "summary": "דליפת אור צבעונית כשכבת overlay",
+        "when_to_use": "מעבר/לוק אנלוגי",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. מעבר/לוק אנלוגי.",
+        "tags": [
+          "texture-stylize",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "color-key",
+      "name": "Color key/greenscreen",
+      "aliases": [],
+      "category": "Compositing/Mask",
+      "summary": "Removing a key color to reveal another layer",
+      "when_to_use": "Only with an even background and a clean mask",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: only with an even background and a clean mask.",
+      "tags": [
+        "compositing-mask",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "שילוב שכבות/מסכה",
+        "summary": "הסרת צבע מפתח לחשיפת שכבה אחרת",
+        "when_to_use": "רק עם רקע אחיד ומסכה טובה",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. רק עם רקע אחיד ומסכה טובה.",
+        "tags": [
+          "compositing-mask",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "motion-blur",
+      "name": "Motion blur",
+      "aliases": [],
+      "category": "Blur/Glow",
+      "summary": "Motion blur from a trail of frames",
+      "when_to_use": "Whips and fast movement",
+      "recipe": "Apply it to the pixels of the original shot only; don't replace or generate footage. Keep the time range short, animate the parameter smoothly, and ease it back to zero at the end so the image stays readable. Typical use: whips and fast movement.",
+      "tags": [
+        "blur-glow",
+        "own-footage"
+      ],
+      "reference": "https://www.remotion.dev/docs/effects",
+      "he": {
+        "category": "טשטוש/זוהר",
+        "summary": "טשטוש תנועה לפי שובל פריימים",
+        "when_to_use": "whip ותנועה מהירה",
+        "recipe": "יישם על פיקסלי השוט המקורי בלבד, לא להחליף או לייצר את המצולם. קבע טווח זמן קצר, הנפש את הפרמטר בצורה חלקה, ודעך/אפס אותו בסוף כדי שהתמונה תישאר קריאה. whip ותנועה מהירה.",
+        "tags": [
+          "blur-glow",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "match-cut",
+      "name": "Match cut",
+      "aliases": [
+        "match on action",
+        "graphic match",
+        "חיתוך התאמה"
+      ],
+      "category": "Transition",
+      "summary": "A cut between two shots where a shape, position or movement lines up in the frame, so the eye carries on even though the place or time has changed.",
+      "when_to_use": "When two shots share a similar object or motion (a hand closing a door, a ball, a face in the center); great for before/after and for jumping between locations.",
+      "recipe": "Mark the frame in shot A where the object sits at a given position and size, and find a matching frame in shot B. Align B with scale/position so the object lands in exactly the same spot (check with a 50% opacity overlay), and cut in the middle of the motion, not at its end. Add 2–4 frames of motion blur or a flash to hide small differences.",
+      "tags": [
+        "transition",
+        "match-cut",
+        "continuity",
+        "own-footage"
+      ],
+      "reference": "Common editing technique",
+      "he": {
+        "category": "מעבר",
+        "summary": "חיתוך בין שני שוטים שבהם צורה, מיקום או תנועה זהים בפריים, כך שהעין ממשיכה ברצף למרות שהמקום או הזמן השתנו.",
+        "when_to_use": "כשיש בשני שוטים אובייקט או תנועה דומים (יד שסוגרת דלת, כדור, פנים במרכז) — מעולה ל'לפני/אחרי' ולמעבר בין לוקיישנים.",
+        "recipe": "מסמנים בשוט A את הפריים שבו האובייקט נמצא במיקום ובגודל מסוימים, ומוצאים בשוט B פריים תואם. מיישרים את B ב-scale/position כך שהאובייקט ייפול בדיוק על אותו מקום (בודקים עם overlay בשקיפות 50%), וחותכים באמצע התנועה ולא בסופה. אפשר להוסיף 2–4 פריימים של motion blur או flash כדי להסתיר הבדלים קטנים.",
+        "tags": [
+          "מעבר",
+          "match-cut",
+          "רציפות",
+          "וידאו-מקורי"
+        ],
+        "reference": "טכניקת עריכה נפוצה"
+      }
+    },
+    {
+      "id": "punch-in-jump-cut",
+      "name": "Punch-in jump cut",
+      "aliases": [
+        "zoom cut",
+        "jump cut",
+        "punch in",
+        "קפיצת זום"
+      ],
+      "category": "Transition",
+      "summary": "A cut within the same talking-head shot that alternates the framing between 100% and about 115–130%, to hide removed pauses and add energy — no blur.",
+      "when_to_use": "In talking videos after cutting pauses or mistakes, and to emphasize a key sentence.",
+      "recipe": "At each cut, alternate between the wide framing and an enlarged crop (e.g. crop=iw/1.2:ih/1.2, then scale back to the original resolution) while the face stays in the same relative position. Don't go beyond about 130% on 1080p footage to keep it sharp. Change size only at cuts, not mid-sentence; a smooth 3–5 frame punch-in on a key word also works.",
+      "tags": [
+        "transition",
+        "jump-cut",
+        "talking-head",
+        "zoom",
+        "own-footage"
+      ],
+      "reference": "https://ffmpeg.org/ffmpeg-filters.html#crop",
+      "he": {
+        "category": "מעבר",
+        "summary": "חיתוך בתוך אותו שוט דיבור (talking head) תוך החלפת גודל הפריים בין 100% ל-115%–130%, כדי להסתיר הסרת שתיקות ולהוסיף אנרגיה — בלי blur.",
+        "when_to_use": "בסרטוני דיבור אחרי חיתוך שתיקות או טעויות, ולהדגשת משפט מפתח.",
+        "recipe": "בכל חיתוך מחליפים לסירוגין בין framing רחב ל-crop מוגדל (למשל crop=iw/1.2:ih/1.2 ואז scale חזרה לרזולוציה המקורית) כשהפנים נשארות באותו מקום יחסי. לא להגדיל מעבר לכ-130% במקור 1080p כדי לשמור על חדות. משנים גודל רק בחיתוך ולא באמצע משפט; אפשר להוסיף punch-in חלק של 3–5 פריימים על מילת מפתח.",
+        "tags": [
+          "מעבר",
+          "jump-cut",
+          "talking-head",
+          "zoom",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "smash-cut",
+      "name": "Smash cut",
+      "aliases": [
+        "hard cut",
+        "חיתוך חד"
+      ],
+      "category": "Transition",
+      "summary": "An abrupt cut between two shots with opposite energy (quiet→loud, slow→fast) and no transition, to create surprise or a comic punch.",
+      "when_to_use": "For a punchline, a reaction, or the jump from build-up to peak; it only works when the contrast is sharp.",
+      "recipe": "Trim the first shot right before the 'answer' and cut straight to a shot with strong contrast in color, size or motion. No fade. Place the cut exactly on the beat or the start of the word; a single black frame before the cut can strengthen the hit.",
+      "tags": [
+        "transition",
+        "hard-cut",
+        "rhythm",
+        "beat-sync"
+      ],
+      "reference": "Common editing technique",
+      "he": {
+        "category": "מעבר",
+        "summary": "חיתוך פתאומי בין שני שוטים באנרגיה הפוכה (שקט→רועש, איטי→מהיר) בלי שום מעבר, ליצירת הפתעה או פאנץ' קומי.",
+        "when_to_use": "בפאנץ' של בדיחה, בתגובה, או במעבר מבנייה לשיא; עובד רק כשהניגוד חד.",
+        "recipe": "מקצרים את השוט הראשון עד הרגע שלפני ה'תשובה' וחותכים ישר לשוט עם ניגוד חזק בצבע, בגודל או בתנועה. לא מוסיפים fade. ממקמים את החיתוך בדיוק על הביט או על תחילת המילה; לפעמים פריים שחור אחד לפני הקאט מחזק את המכה.",
+        "tags": [
+          "מעבר",
+          "hard-cut",
+          "קצב",
+          "beat-sync"
+        ],
+        "reference": "טכניקת עריכה נפוצה"
+      }
+    },
+    {
+      "id": "object-wipe",
+      "name": "Object/body wipe",
+      "aliases": [
+        "mask transition",
+        "foreground wipe",
+        "מעבר דרך אובייקט"
+      ],
+      "category": "Transition",
+      "summary": "An object close to the camera (a body, a pillar, a hand, a car) crosses the frame, and the next shot is revealed behind it while it covers the screen.",
+      "when_to_use": "When a foreground object naturally crosses the frame; great for street footage and moving between locations.",
+      "recipe": "Find an object passing in front of the camera in shot A. Draw a mask that follows its leading edge (keyframes every 1–2 frames, slight feather) and place shot B under A, so B is revealed where the object has already passed. If the object covers the whole frame for even one frame, a plain cut on that frame is enough. Shot B should ideally continue in the same direction of motion.",
+      "tags": [
+        "transition",
+        "mask",
+        "rotoscope",
+        "own-footage"
+      ],
+      "reference": "Common editing technique",
+      "he": {
+        "category": "מעבר",
+        "summary": "אובייקט קרוב למצלמה (גוף, עמוד, יד, מכונית) חוצה את הפריים, והשוט הבא נחשף מאחוריו בזמן שהוא מסתיר את המסך.",
+        "when_to_use": "כשיש בשוט תנועה טבעית של אובייקט קדמי לרוחב הפריים; מעולה בצילומי רחוב ובמעבר בין לוקיישנים.",
+        "recipe": "בשוט A מאתרים אובייקט שעובר מול המצלמה. מציירים מסכה שעוקבת אחרי הקצה המוביל שלו (keyframes כל 1–2 פריימים, feather קל) ומניחים את שוט B מתחת ל-A, כך ש-B נחשף בשטח שהאובייקט כבר עבר. אם האובייקט מכסה את כל הפריים אפילו לפריים אחד, מספיק חיתוך פשוט באותו פריים. עדיף ששוט B ימשיך באותו כיוון תנועה.",
+        "tags": [
+          "מעבר",
+          "mask",
+          "rotoscope",
+          "וידאו-מקורי"
+        ],
+        "reference": "טכניקת עריכה נפוצה"
+      }
+    },
+    {
+      "id": "zoom-through",
+      "name": "Zoom-through transition",
+      "aliases": [
+        "zoom into object",
+        "portal transition",
+        "זום דרך אובייקט"
+      ],
+      "category": "Transition",
+      "summary": "A fast zoom into a dark area or object in the shot (an eye, an opening, a screen, a cup), and the next shot starts from inside that area.",
+      "when_to_use": "When the shot has an area that can act as a 'portal' — a phone screen, a door, a pupil, the sky.",
+      "recipe": "Animate the scale of shot A (ease-in, 6–10 frames) toward the object so it stays centered. Mask the object (or rely on it being dark) and place shot B behind it, small, growing with the zoom until it fills the frame. Add a short zoom blur at the peak and an ease-out at the start of B.",
+      "tags": [
+        "transition",
+        "zoom",
+        "mask",
+        "own-footage"
+      ],
+      "reference": "Common editing technique",
+      "he": {
+        "category": "מעבר",
+        "summary": "זום מהיר לתוך אזור כהה או אובייקט בשוט (עין, פתח, מסך, כוס), והשוט הבא מתחיל מתוך אותו אזור.",
+        "when_to_use": "כשיש בשוט אזור שיכול לשמש 'פורטל' — מסך טלפון, דלת, אישון, שמיים.",
+        "recipe": "מנפישים scale של שוט A (ease-in, 6–10 פריימים) לכיוון האובייקט כך שהוא נשאר במרכז. ממסכים את האובייקט (או מנצלים את היותו כהה) ומציבים את שוט B מתחתיו בגודל קטן שגדל יחד עם הזום עד שהוא ממלא את הפריים. מוסיפים zoom blur קצר בשיא ו-ease-out בתחילת B.",
+        "tags": [
+          "מעבר",
+          "zoom",
+          "mask",
+          "וידאו-מקורי"
+        ],
+        "reference": "טכניקת עריכה נפוצה"
+      }
+    },
+    {
+      "id": "spin-transition",
+      "name": "Spin transition",
+      "aliases": [
+        "rotation transition",
+        "roll transition",
+        "מעבר סיבוב"
+      ],
+      "category": "Transition",
+      "summary": "The shot spins fast by 90°–360° with motion blur, and at the peak of the spin it switches to the next shot, which continues in the same direction.",
+      "when_to_use": "In energetic montages, travel and fast music; less suited to talking content.",
+      "recipe": "Scale both shots to about 140% so the corners aren't revealed while spinning (or use mirror edges). Animate rotation at the end of A and the start of B (ease-in for A, ease-out for B, 8–12 frames in total) and cut when the spin is fastest. Add motion/radial blur proportional to the speed. In FFmpeg, use rotate with a time expression followed by crop.",
+      "tags": [
+        "transition",
+        "rotation",
+        "motion-blur",
+        "own-footage"
+      ],
+      "reference": "https://ffmpeg.org/ffmpeg-filters.html#rotate",
+      "he": {
+        "category": "מעבר",
+        "summary": "השוט מסתובב מהר ב-90°–360° עם motion blur, ובשיא הסיבוב מתחלף לשוט הבא שממשיך באותו כיוון.",
+        "when_to_use": "במונטאז' אנרגטי, טיולים ומוזיקה מהירה; פחות מתאים לתוכן מדבר.",
+        "recipe": "מגדילים את שני השוטים לכ-140% כדי שהפינות לא ייחשפו בזמן הסיבוב (או משתמשים ב-mirror edges). מנפישים rotation בסוף A ובתחילת B (ease-in ל-A, ease-out ל-B, סך הכול 8–12 פריימים) וחותכים כשמהירות הסיבוב בשיאה. מוסיפים motion/radial blur ביחס למהירות. ב-FFmpeg אפשר rotate עם ביטוי זמן ואחריו crop.",
+        "tags": [
+          "מעבר",
+          "rotation",
+          "motion-blur",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "infinite-zoom",
+      "name": "Infinite zoom",
+      "aliases": [
+        "endless zoom",
+        "zoom loop",
+        "זום אינסופי"
+      ],
+      "category": "Transition",
+      "summary": "A continuous zoom into the frame where each shot contains the next one at its center, so the camera seems to dive forever.",
+      "when_to_use": "In a montage of several places or stages, or with images that can nest inside each other.",
+      "recipe": "Arrange shots so the center of each can contain the next. Place B small (e.g. 20%) in the center of A with a soft mask, and animate an exponential scale on both layers together (a constant zoom rate on a logarithmic scale) until B fills the screen, then repeat with the next shot. Match color between layers so the edge doesn't stand out.",
+      "tags": [
+        "transition",
+        "zoom",
+        "loop",
+        "own-footage"
+      ],
+      "reference": "Common editing technique",
+      "he": {
+        "category": "מעבר",
+        "summary": "זום רציף לתוך הפריים כשכל שוט מכיל את הבא במרכזו, כך שנראה שהמצלמה צוללת בלי סוף.",
+        "when_to_use": "במונטאז' של כמה מקומות או שלבים, או בתמונות שאפשר לשלב זו בתוך זו.",
+        "recipe": "מסדרים שוטים כך שמרכז כל אחד יכול להכיל את הבא. ממקמים את B קטן (למשל 20%) במרכז A עם מסכה רכה, ומנפישים scale אקספוננציאלי של שתי השכבות יחד (קצב זום קבוע בסקאלה לוגריתמית) עד ש-B ממלא את המסך, ואז חוזרים עם השוט הבא. מתאימים צבע בין השכבות כדי שהקצה לא יבלוט.",
+        "tags": [
+          "מעבר",
+          "zoom",
+          "loop",
+          "וידאו-מקורי"
+        ],
+        "reference": "טכניקת עריכה נפוצה"
+      }
+    },
+    {
+      "id": "reverse-rewind",
+      "name": "Reverse / rewind",
+      "aliases": [
+        "rewind effect",
+        "reverse playback",
+        "הרצה לאחור"
+      ],
+      "category": "Timing/Speed",
+      "summary": "Footage played backwards — sometimes fast, as a 'rewind' — to create an impossible action or go back to an earlier moment.",
+      "when_to_use": "For physical actions that look surprising in reverse (water, a throw, a jump) and for a 'going back' beat in a story.",
+      "recipe": "Trim a short segment (ideally up to about 10 seconds, since FFmpeg's reverse keeps the whole segment in memory) and apply trim then reverse. For a rewind effect, speed it up with setpts=PTS/3 and add light scanlines or RGB split. Audio: areverse or mute.",
+      "tags": [
+        "reverse",
+        "time",
+        "rhythm",
+        "own-footage"
+      ],
+      "reference": "https://ffmpeg.org/ffmpeg-filters.html#reverse",
+      "he": {
+        "category": "קצב/מהירות",
+        "summary": "הקלטה מנוגנת לאחור — לפעמים מהר, כ'הרצה אחורה' — כדי ליצור פעולה בלתי אפשרית או לחזור לרגע קודם.",
+        "when_to_use": "לפעולות פיזיות שנראות מפתיעות הפוך (מים, זריקה, קפיצה) ולמעבר 'חזרה אחורה' בסיפור.",
+        "recipe": "חותכים קטע קצר (רצוי עד כ-10 שניות, כי reverse של FFmpeg מחזיק את כל הקטע בזיכרון) ומפעילים trim ואז reverse. לאפקט rewind מאיצים עם setpts=PTS/3 ומוסיפים scanlines או RGB split קלים. אודיו: areverse או השתקה.",
+        "tags": [
+          "reverse",
+          "זמן",
+          "קצב",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "boomerang",
+      "name": "Boomerang / ping-pong loop",
+      "aliases": [
+        "ping pong",
+        "bounce loop",
+        "בומרנג"
+      ],
+      "category": "Timing/Speed",
+      "summary": "A one-to-two second clip that plays forward and backward in a loop, like an Instagram Boomerang.",
+      "when_to_use": "For a short, clear motion — a jump, raising a glass, hair in the wind — and for an opening or ending that holds attention.",
+      "recipe": "Trim 0.7–1.5 seconds, duplicate it with reverse and join forward+backward (split → reverse → concat), repeating 2–3 times. Speed it up 1.5–2× so it feels alive, and drop the duplicated frame at the turnaround so there's no visible pause.",
+      "tags": [
+        "loop",
+        "reverse",
+        "rhythm",
+        "own-footage"
+      ],
+      "reference": "https://ffmpeg.org/ffmpeg-filters.html#reverse",
+      "he": {
+        "category": "קצב/מהירות",
+        "summary": "קטע של שנייה-שתיים שמתנגן קדימה ואחורה בלולאה, כמו בומרנג של אינסטגרם.",
+        "when_to_use": "לתנועה קצרה וברורה — קפיצה, הרמת כוס, שיער ברוח — ולפתיחה או סיום שמחזיקים מבט.",
+        "recipe": "חותכים קטע של 0.7–1.5 שניות, משכפלים אותו עם reverse ומחברים קדימה+אחורה (split → reverse → concat), וחוזרים 2–3 פעמים. מאיצים פי 1.5–2 כדי שירגיש חי, ומסירים את הפריים הכפול בנקודת ההיפוך כדי שלא תורגש עצירה.",
+        "tags": [
+          "loop",
+          "reverse",
+          "קצב",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "optical-flow-slowmo",
+      "name": "Optical-flow slow motion",
+      "aliases": [
+        "smooth slow motion",
+        "frame interpolation",
+        "סלואו מושן חלק"
+      ],
+      "category": "Timing/Speed",
+      "summary": "Slowing down footage shot at 24–30 fps while generating in-between frames, so the motion looks smooth instead of choppy.",
+      "when_to_use": "When you need a 2–4× slowdown and didn't shoot at a high frame rate; works best with a simple background and no crossing objects.",
+      "recipe": "Slow down with setpts=2*PTS (or more), then minterpolate=fps=30:mi_mode=mci:mc_mode=aobmc:vsbmc=1 to generate in-between frames. Check edges for artifacts (hands, hair, crossing objects) and shorten the segment if there's smearing. If you shot at 60/120 fps, just play it back at 30 fps without interpolation.",
+      "tags": [
+        "slow-motion",
+        "interpolation",
+        "rhythm",
+        "own-footage"
+      ],
+      "reference": "https://ffmpeg.org/ffmpeg-filters.html#minterpolate",
+      "he": {
+        "category": "קצב/מהירות",
+        "summary": "האטה של קטע שצולם ב-24–30fps תוך יצירת פריימי ביניים, כך שהתנועה נראית חלקה במקום מקוטעת.",
+        "when_to_use": "כשצריך האטה של פי 2–4 ולא צולם בקצב פריימים גבוה; עובד הכי טוב עם רקע פשוט ובלי אובייקטים חוצים.",
+        "recipe": "מאטים עם setpts=2*PTS (או יותר) ואז minterpolate=fps=30:mi_mode=mci:mc_mode=aobmc:vsbmc=1 לייצור פריימי ביניים. בודקים ארטיפקטים בקצוות (ידיים, שיער, חפצים חוצים) ומקצרים את הקטע אם יש 'מריחות'. אם צולם ב-60/120fps — עדיף פשוט לנגן ב-30fps בלי אינטרפולציה.",
+        "tags": [
+          "slow-motion",
+          "interpolation",
+          "קצב",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "stutter",
+      "name": "Stutter / frame repeat",
+      "aliases": [
+        "glitch stutter",
+        "repeat frames",
+        "גמגום פריימים"
+      ],
+      "category": "Timing/Speed",
+      "summary": "A quick repeat of 3–6 frames two or three times, creating a rhythmic stutter synced to the beat.",
+      "when_to_use": "On a hi-hat or snare in electronic music, and to emphasize a movement or reaction.",
+      "recipe": "At the beat, take 3–6 frames and repeat them 2–3 times (e.g. loop=loop=2:size=4:start=<frame number>), then continue normally. You can add a small punch-in or RGB offset on each repeat. Use sparingly — 1–3 times per video.",
+      "tags": [
+        "stutter",
+        "beat-sync",
+        "glitch",
+        "own-footage"
+      ],
+      "reference": "https://ffmpeg.org/ffmpeg-filters.html#loop",
+      "he": {
+        "category": "קצב/מהירות",
+        "summary": "חזרה מהירה על 3–6 פריימים פעמיים-שלוש, שיוצרת 'גמגום' קצבי שמסונכרן לביט.",
+        "when_to_use": "על hi-hat או סנר במוזיקה אלקטרונית, ולהדגשת תנועה או תגובה.",
+        "recipe": "בנקודת הביט לוקחים 3–6 פריימים וחוזרים עליהם 2–3 פעמים (למשל loop=loop=2:size=4:start=<מספר פריים>), ואז ממשיכים כרגיל. אפשר להוסיף לכל חזרה punch-in קטן או הסטת RGB. להשתמש במשורה — 1–3 פעמים בסרטון.",
+        "tags": [
+          "stutter",
+          "beat-sync",
+          "glitch",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "choppy-frame-rate",
+      "name": "Choppy frame rate / stop-motion feel",
+      "aliases": [
+        "posterize time",
+        "low fps look",
+        "פריימרייט נמוך"
+      ],
+      "category": "Timing/Speed",
+      "summary": "Deliberately dropping the frame rate to 6–12 fps in a section, so motion looks jumpy like stop-motion or animation.",
+      "when_to_use": "When switching to an illustrated style, on fast motion, or as a contrast before returning to smooth motion.",
+      "recipe": "On the segment, apply fps=8 followed by fps=30 — the file stays 30 fps but each frame is held about 4 times and motion looks choppy. Combine with high contrast or grain, and return to the full frame rate on the next beat.",
+      "tags": [
+        "frame-rate",
+        "stop-motion",
+        "stylize",
+        "own-footage"
+      ],
+      "reference": "https://ffmpeg.org/ffmpeg-filters.html#fps-1",
+      "he": {
+        "category": "קצב/מהירות",
+        "summary": "הורדה מכוונת של קצב הפריימים ל-6–12fps בקטע מסוים, כך שהתנועה נראית קופצנית כמו סטופ-מושן או אנימציה.",
+        "when_to_use": "במעבר לסגנון מאויר, על תנועה מהירה, או כניגוד לפני חזרה לתנועה חלקה.",
+        "recipe": "על הקטע מפעילים fps=8 ואחריו fps=30 — הקובץ נשאר 30fps אבל כל פריים מוחזק כ-4 פעמים והתנועה 'מקוטעת'. משלבים עם ניגודיות גבוהה או grain, וחוזרים לקצב מלא על הביט הבא.",
+        "tags": [
+          "frame-rate",
+          "stop-motion",
+          "stylize",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "hyperlapse",
+      "name": "Timelapse / hyperlapse",
+      "aliases": [
+        "time lapse",
+        "hyper lapse",
+        "האצת זמן"
+      ],
+      "category": "Timing/Speed",
+      "summary": "Compressing minutes or hours into a few seconds; in a hyperlapse the camera also travels along a path.",
+      "when_to_use": "To show a process (cooking, building, a sunset) or a quick change of place.",
+      "recipe": "Speed up 8–60× with setpts=PTS/<factor> (or framestep to skip frames) and drop the audio. For a hyperlapse, stabilize first (vidstabdetect/vidstabtransform if your build has them) and only then speed up; a light tmix smooths jumps. You can add a speed ramp back to normal speed at the key moment.",
+      "tags": [
+        "timelapse",
+        "speed",
+        "rhythm",
+        "own-footage"
+      ],
+      "reference": "https://ffmpeg.org/ffmpeg-filters.html#setpts_002c-asetpts",
+      "he": {
+        "category": "קצב/מהירות",
+        "summary": "דחיסה של דקות או שעות לשניות בודדות; ב-hyperlapse המצלמה גם נעה לאורך מסלול.",
+        "when_to_use": "להצגת תהליך (בישול, בנייה, שקיעה) או מעבר מקום מהיר.",
+        "recipe": "מאיצים פי 8–60 עם setpts=PTS/<פקטור> (או framestep לדילוג פריימים) ומשמיטים את האודיו. ב-hyperlapse מייצבים קודם (vidstabdetect/vidstabtransform אם קיימים ב-build) ורק אז מאיצים; tmix קל מחליק קפיצות. אפשר לשלב speed ramp חזרה למהירות רגילה ברגע החשוב.",
+        "tags": [
+          "timelapse",
+          "speed",
+          "קצב",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "beat-montage",
+      "name": "Beat-synced montage",
+      "aliases": [
+        "cut on beat",
+        "rhythmic cuts",
+        "מונטאז' על הביט"
+      ],
+      "category": "Timing/Speed",
+      "summary": "A sequence of short shots where every cut lands on a beat in the music, often getting shorter toward the peak.",
+      "when_to_use": "For openings, trip or event recaps; needs enough varied shots.",
+      "recipe": "Mark the beats (BPM markers or by hand), trim each shot so it starts on a beat, and shorten shot lengths gradually (e.g. 4→2→1 beats) toward the peak. In each shot pick the moment with the clearest motion, and add an occasional flash or shake on a strong beat. Check that cuts are in sync within ±1 frame.",
+      "tags": [
+        "beat-sync",
+        "montage",
+        "rhythm",
+        "own-footage"
+      ],
+      "reference": "Common editing technique",
+      "he": {
+        "category": "קצב/מהירות",
+        "summary": "רצף שוטים קצרים שכל חיתוך שלהם נופל על פעמה במוזיקה, ולעתים מתקצר בהדרגה לקראת השיא.",
+        "when_to_use": "בפתיחות, סיכומי טיול או אירוע ו-recap; דורש מספיק שוטים מגוונים.",
+        "recipe": "מסמנים את הביטים (מרקרים לפי BPM או ידנית), חותכים כל שוט כך שיתחיל על ביט, ומקצרים את אורכי השוטים בהדרגה (למשל 4→2→1 ביטים) לקראת השיא. בכל שוט בוחרים את הרגע עם התנועה הכי ברורה, ומוסיפים מדי פעם flash או shake על ביט חזק. בודקים שהחיתוכים מסונכרנים בטווח ±1 פריים.",
+        "tags": [
+          "beat-sync",
+          "montage",
+          "קצב",
+          "וידאו-מקורי"
+        ],
+        "reference": "טכניקת עריכה נפוצה"
+      }
+    },
+    {
+      "id": "echo-trails",
+      "name": "Echo / ghost trails",
+      "aliases": [
+        "frame echo",
+        "ghosting",
+        "motion trails",
+        "שובל רפאים"
+      ],
+      "category": "Blur/Glow",
+      "summary": "Previous frames linger semi-transparently behind the moving subject, creating a trail of 'ghosts' or a motion smear.",
+      "when_to_use": "For dance, sports and motion against a steady background; less good when the camera moves, since the whole frame smears.",
+      "recipe": "For a soft trail: tmix=frames=5 (an average of neighboring frames). For a bright trail that fades slowly: lagfun=decay=0.9 (works well on a bright subject against a dark background). Apply only to a short segment or mask it to the subject, and return to a sharp image after the beat.",
+      "tags": [
+        "echo",
+        "trails",
+        "motion",
+        "own-footage"
+      ],
+      "reference": "https://ffmpeg.org/ffmpeg-filters.html#tmix",
+      "he": {
+        "category": "טשטוש/זוהר",
+        "summary": "פריימים קודמים נשארים שקופים מאחורי האובייקט הנע ויוצרים שובל של 'רוחות' או מריחת תנועה.",
+        "when_to_use": "בריקוד, ספורט ותנועה מול רקע יציב; פחות טוב כשהמצלמה זזה, כי אז כל הפריים נמרח.",
+        "recipe": "לשובל רך: tmix=frames=5 (ממוצע של פריימים סמוכים). לשובל בהיר שדועך לאט: lagfun=decay=0.9 (עובד טוב על אובייקט בהיר מול רקע כהה). מפעילים רק על קטע קצר או ממסכים לאובייקט, וחוזרים לתמונה חדה אחרי הביט.",
+        "tags": [
+          "echo",
+          "trails",
+          "motion",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "ken-burns",
+      "name": "Ken Burns pan & zoom",
+      "aliases": [
+        "pan and zoom",
+        "photo zoom",
+        "קן ברנס"
+      ],
+      "category": "Camera motion",
+      "summary": "A slow zoom and/or pan across a still image or static shot to bring movement into it.",
+      "when_to_use": "For photos, screenshots and static shots inside a sequence that has motion.",
+      "recipe": "Start from an image with a higher resolution than the output and use zoompan (e.g. z='min(zoom+0.0015,1.3)':d=<frames> with x/y aimed at the point of interest) or a scale+position animation with easing. Zoom 5–15% over a 3–5 second shot, ending on the important subject. To avoid jitter, upscale the image first (scale=4000:-1) and then apply zoompan.",
+      "tags": [
+        "camera",
+        "zoom",
+        "pan",
+        "photos"
+      ],
+      "reference": "https://ffmpeg.org/ffmpeg-filters.html#zoompan",
+      "he": {
+        "category": "תנועת מצלמה",
+        "summary": "זום ו/או פאן איטיים על תמונה סטטית או שוט סטטי כדי להכניס בו תנועה.",
+        "when_to_use": "לתמונות, צילומי מסך ושוטים סטטיים בתוך רצף שיש בו תנועה.",
+        "recipe": "מתחילים מתמונה ברזולוציה גבוהה מהפלט ומשתמשים ב-zoompan (למשל z='min(zoom+0.0015,1.3)':d=<מספר פריימים> עם x/y לנקודת העניין) או באנימציית scale+position עם ease. זום של 5%–15% לשוט של 3–5 שניות, כשהסיום ממוקד באובייקט החשוב. כדי למנוע רעד, מגדילים את התמונה קודם (scale=4000:-1) ורק אז zoompan.",
+        "tags": [
+          "camera",
+          "zoom",
+          "pan",
+          "תמונות"
+        ]
+      }
+    },
+    {
+      "id": "dolly-zoom",
+      "name": "Dolly zoom (vertigo)",
+      "aliases": [
+        "vertigo effect",
+        "zolly",
+        "דולי זום"
+      ],
+      "category": "Camera motion",
+      "summary": "The subject stays the same size in frame while the background expands or shrinks around it — a sense of vertigo or sudden realization.",
+      "when_to_use": "For a dramatic or comic moment of realization; needs to be planned when shooting.",
+      "recipe": "Shoot while the camera moves toward (or away from) the subject in a straight line at a constant speed, with a wide lens. In the edit, animate scale opposite to the move so the subject's size stays constant (keyframe by face width), cropping to the final frame. Alternative: optical zoom during the move. Stabilize on the subject so it doesn't wobble.",
+      "tags": [
+        "camera",
+        "zoom",
+        "perspective",
+        "own-footage"
+      ],
+      "reference": "Common editing technique",
+      "he": {
+        "category": "תנועת מצלמה",
+        "summary": "הנושא נשאר באותו גודל בפריים בזמן שהרקע מתרחב או מתכווץ סביבו — תחושת סחרחורת או הבנה פתאומית.",
+        "when_to_use": "לרגע דרמטי או קומי של הבנה; דורש צילום מתוכנן מראש.",
+        "recipe": "מצלמים כשהמצלמה מתקרבת לנושא (או מתרחקת) בקו ישר ובקצב קבוע, בעדשה רחבה. בעריכה מנפישים scale בכיוון ההפוך לתנועה כך שגודל הנושא נשאר קבוע (keyframes לפי רוחב הפנים), עם crop לפריים הסופי. חלופה: זום אופטי בזמן תנועה. מוסיפים ייצוב על הנושא כדי שלא ינדנד.",
+        "tags": [
+          "camera",
+          "zoom",
+          "perspective",
+          "וידאו-מקורי"
+        ],
+        "reference": "טכניקת עריכה נפוצה"
+      }
+    },
+    {
+      "id": "handheld-drift",
+      "name": "Handheld drift / camera wiggle",
+      "aliases": [
+        "fake handheld",
+        "camera wiggle",
+        "תנועת יד"
+      ],
+      "category": "Camera motion",
+      "summary": "Gentle, random movement of the frame that mimics a handheld camera, so a static shot or photo doesn't look frozen.",
+      "when_to_use": "On tripod shots, screenshots and photos inside a dynamic video — at very low intensity.",
+      "recipe": "Scale the shot up 4–6% and animate position/rotation with slow noise (0.5–1.5 Hz, 5–15 px amplitude, up to 0.5° rotation). In FFmpeg: a small scale, then crop with x/y driven by sin/cos of t at frequencies that aren't multiples of each other. Unlike shake on impact, the movement here is continuous and gentle.",
+      "tags": [
+        "camera",
+        "handheld",
+        "wiggle",
+        "own-footage"
+      ],
+      "reference": "https://ffmpeg.org/ffmpeg-filters.html#crop",
+      "he": {
+        "category": "תנועת מצלמה",
+        "summary": "תנועה אקראית ועדינה של הפריים שמדמה מצלמת יד, כדי שצילום סטטי או תמונה לא ייראו 'קפואים'.",
+        "when_to_use": "על צילומי חצובה, צילומי מסך ותמונות בתוך סרטון דינמי — בעוצמה נמוכה מאוד.",
+        "recipe": "מגדילים את השוט ב-4%–6% ומנפישים position/rotation עם רעש איטי (תדר 0.5–1.5Hz, משרעת 5–15px, סיבוב עד 0.5°). ב-FFmpeg: scale קטן ואז crop שה-x/y שלו הם פונקציה של sin/cos של t בתדרים שאינם כפולה זה של זה. שונה מ-shake on impact: כאן התנועה רציפה ועדינה.",
+        "tags": [
+          "camera",
+          "handheld",
+          "wiggle",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "rack-focus",
+      "name": "Rack focus (simulated)",
+      "aliases": [
+        "focus pull",
+        "focus shift",
+        "מעבר פוקוס"
+      ],
+      "category": "Camera motion",
+      "summary": "A focus shift from a near object to a far one (or the reverse) that steers the eye to a new subject.",
+      "when_to_use": "When the frame has two layers of depth; best done in camera, but it can be simulated in the edit.",
+      "recipe": "In camera: pull focus manually while recording. Simulated: mask the foreground and background and animate opposite gaussian blurs (foreground 0→8 px, background 8→0 px) over 10–20 frames with easing. A 1–2% scale change ('lens breathing') adds realism.",
+      "tags": [
+        "camera",
+        "focus",
+        "blur",
+        "own-footage"
+      ],
+      "reference": "Common editing technique",
+      "he": {
+        "category": "תנועת מצלמה",
+        "summary": "מעבר חדות מאובייקט קרוב לרחוק (או להפך) שמכוון את העין לנושא חדש.",
+        "when_to_use": "כשיש בפריים שתי שכבות עומק; עדיף בצילום אמיתי, אבל אפשר לדמות בעריכה.",
+        "recipe": "בצילום: משנים פוקוס ידנית בזמן ההקלטה. בדימוי: יוצרים מסכה לאזור הקדמי ולאזור האחורי ומנפישים gaussian blur מנוגד (קדמי 0→8px, אחורי 8→0px) במשך 10–20 פריימים עם ease. scale של 1%–2% ('נשימת עדשה') מוסיף ריאליזם.",
+        "tags": [
+          "camera",
+          "focus",
+          "blur",
+          "וידאו-מקורי"
+        ],
+        "reference": "טכניקת עריכה נפוצה"
+      }
+    },
+    {
+      "id": "parallax-photo",
+      "name": "2.5D parallax photo",
+      "aliases": [
+        "3D photo",
+        "parallax zoom",
+        "תמונה תלת-ממדית"
+      ],
+      "category": "Camera motion",
+      "summary": "A still image is split into layers (subject and background) and each layer moves at a different speed, creating a sense of depth.",
+      "when_to_use": "For archive photos, product shots and opening images; works well with a clear subject.",
+      "recipe": "Separate the subject (mask / background removal) and fill in the background behind it (clone/fill) so there's no hole. Animate the background from 100% to 105% scale and the subject from 100% to 112% (or move them in opposite directions) over 3–5 seconds with easing. A light blur on the background and a foreground particle layer deepen the effect.",
+      "tags": [
+        "camera",
+        "parallax",
+        "mask",
+        "photos"
+      ],
+      "reference": "Common editing technique",
+      "he": {
+        "category": "תנועת מצלמה",
+        "summary": "תמונה סטטית מופרדת לשכבות (נושא ורקע) וכל שכבה זזה במהירות אחרת — נוצרת תחושת עומק.",
+        "when_to_use": "לתמונות ארכיון, צילומי מוצר ותמונות פתיחה; עובד טוב כשיש נושא ברור.",
+        "recipe": "מפרידים את הנושא (מסכה / הסרת רקע) ומשלימים את הרקע שמאחוריו (clone/fill) כדי שלא ייווצר חור. מנפישים את הרקע ב-scale של 100%→105% ואת הנושא ב-100%→112% (או הזזה בכיוונים הפוכים) במשך 3–5 שניות עם ease. blur קל לרקע ושכבת חלקיקים קדמית מעמיקים את האפקט.",
+        "tags": [
+          "camera",
+          "parallax",
+          "mask",
+          "תמונות"
+        ],
+        "reference": "טכניקת עריכה נפוצה"
+      }
+    },
+    {
+      "id": "split-screen",
+      "name": "Split screen / grid",
+      "aliases": [
+        "multi panel",
+        "side by side",
+        "מסך מפוצל"
+      ],
+      "category": "Compositing/Mask",
+      "summary": "Two or more shots shown at once in a split of the screen — side by side, stacked, or in a grid.",
+      "when_to_use": "For comparisons (before/after, two angles), a reaction next to the source, or a fast 'day in the life'.",
+      "recipe": "In a vertical 1080×1920 format, usually split into two 1080×960 panes stacked vertically (vstack) or a 2×2 grid (xstack). Crop each shot to fit its pane, keep the subject centered, and add a thin divider or gap. Panes can come in one after another on beats.",
+      "tags": [
+        "split-screen",
+        "compositing",
+        "layout",
+        "own-footage"
+      ],
+      "reference": "https://ffmpeg.org/ffmpeg-filters.html#xstack-1",
+      "he": {
+        "category": "שילוב שכבות/מסכה",
+        "summary": "שניים או יותר שוטים מוצגים בו-זמנית בחלוקה של המסך — זה לצד זה, זה מעל זה, או בגריד.",
+        "when_to_use": "להשוואה (לפני/אחרי, שתי זוויות), תגובה לצד המקור, או 'יום בחיים' מהיר.",
+        "recipe": "בפורמט אנכי 1080×1920 מחלקים לרוב לשני חלונות של 1080×960 זה מעל זה (vstack) או לגריד 2×2 (xstack). חותכים כל שוט ב-crop שמתאים לחלון שלו ושומרים את הנושא במרכזו, ומוסיפים קו מפריד דק או רווח. אפשר להכניס את החלונות בזה אחר זה על ביטים.",
+        "tags": [
+          "split-screen",
+          "compositing",
+          "layout",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "picture-in-picture",
+      "name": "Picture-in-picture",
+      "aliases": [
+        "PiP",
+        "inset video",
+        "תמונה בתוך תמונה"
+      ],
+      "category": "Compositing/Mask",
+      "summary": "A small video (e.g. the speaker's face) in a corner, over a main video (a screen, a product, a reaction clip).",
+      "when_to_use": "In reaction videos, screen tutorials and product reviews.",
+      "recipe": "Shrink the top layer to 30–40% of the frame width, add rounded corners or a border and a shadow, and place it in the safe area (not at the bottom, where Reels captions and icons sit), e.g. overlay=x=W-w-40:y=200. Animate the entrance (scale pop) and don't move the window mid-sentence.",
+      "tags": [
+        "pip",
+        "overlay",
+        "compositing",
+        "own-footage"
+      ],
+      "reference": "https://ffmpeg.org/ffmpeg-filters.html#overlay-1",
+      "he": {
+        "category": "שילוב שכבות/מסכה",
+        "summary": "וידאו קטן (למשל פני הדובר) בפינה, מעל וידאו ראשי (מסך, מוצר, קטע תגובה).",
+        "when_to_use": "בסרטוני תגובה, הדרכות מסך וסקירות מוצר.",
+        "recipe": "מקטינים את השכבה העליונה ל-30%–40% מרוחב הפריים, מוסיפים פינות מעוגלות או מסגרת וצל, וממקמים ב-safe area (לא בתחתית, שם יושבים הכיתוב והאייקונים של Reels), למשל overlay=x=W-w-40:y=200. מנפישים כניסה (scale pop) ולא מזיזים את החלון באמצע משפט.",
+        "tags": [
+          "pip",
+          "overlay",
+          "compositing",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "text-behind-subject",
+      "name": "Text behind subject",
+      "aliases": [
+        "depth text",
+        "text behind person",
+        "טקסט מאחורי הדובר"
+      ],
+      "category": "Compositing/Mask",
+      "summary": "A large title placed between the background and the subject, so the subject hides part of the letters and creates depth.",
+      "when_to_use": "For an opening, a chapter title or a topic name; needs a clean subject mask.",
+      "recipe": "Create a subject mask (segmentation or rotoscoping; with a locked-off camera a few keyframes are enough). Layer order: original video → text → a copy of the subject only, cut out by the mask. Pick a bold, large font in a color that contrasts with the background, positioned so the head and shoulders cover 10–30% of the letters. Animate the text in (scale/fade) once the subject is in place.",
+      "tags": [
+        "text",
+        "mask",
+        "depth",
+        "compositing",
+        "own-footage"
+      ],
+      "reference": "Common editing technique",
+      "he": {
+        "category": "שילוב שכבות/מסכה",
+        "summary": "כותרת גדולה ממוקמת בין הרקע לנושא, כך שהנושא מסתיר חלק מהאותיות ונוצרת תחושת עומק.",
+        "when_to_use": "בפתיחה, בכותרת פרק או בשם נושא; דורש מסכת נושא נקייה.",
+        "recipe": "יוצרים מסכה לנושא (segmentation או rotoscope; במצלמה סטטית מספיקים מעט keyframes). סדר השכבות: וידאו מקורי ← טקסט ← עותק של הנושא בלבד לפי המסכה. בוחרים פונט עבה וגדול בצבע שמנוגד לרקע, וממקמים כך שהראש והכתפיים מכסים 10%–30% מהאותיות. מנפישים את הטקסט בכניסה (scale/fade) כשהנושא כבר במקומו.",
+        "tags": [
+          "text",
+          "mask",
+          "depth",
+          "compositing",
+          "וידאו-מקורי"
+        ],
+        "reference": "טכניקת עריכה נפוצה"
+      }
+    },
+    {
+      "id": "clone-multiplicity",
+      "name": "Clone / multiplicity",
+      "aliases": [
+        "clone effect",
+        "twins effect",
+        "שכפול דמות"
+      ],
+      "category": "Compositing/Mask",
+      "summary": "The same person appears several times in the same frame, as if talking to themselves.",
+      "when_to_use": "For comedy sketches, an inner argument and 'types of people' formats.",
+      "recipe": "Shoot from a tripod with exposure, focus and white balance locked, recording several takes where the person is in a different part of the frame each time and doesn't cross the seam. In the edit, stack the takes and use a mask with a wide feather along a line with no movement. If the light changed between takes, correct levels/WB per layer so the seam doesn't show.",
+      "tags": [
+        "clone",
+        "mask",
+        "compositing",
+        "own-footage"
+      ],
+      "reference": "Common editing technique",
+      "he": {
+        "category": "שילוב שכבות/מסכה",
+        "summary": "אותו אדם מופיע כמה פעמים באותו פריים, כאילו משוחח עם עצמו.",
+        "when_to_use": "לסקיצות קומיות, ויכוח פנימי ופורמטים של 'סוגי אנשים'.",
+        "recipe": "מצלמים מחצובה עם חשיפה, פוקוס ואיזון לבן נעולים, כמה טייקים שבכל אחד הדמות בחלק אחר של הפריים ולא חוצה את קו החיבור. בעריכה מניחים את הטייקים בשכבות ומשתמשים במסכה עם feather רחב לאורך קו שאין בו תנועה. אם האור השתנה בין הטייקים, מתקנים levels/WB לכל שכבה כדי שהתפר לא ייראה.",
+        "tags": [
+          "clone",
+          "mask",
+          "compositing",
+          "וידאו-מקורי"
+        ],
+        "reference": "טכניקת עריכה נפוצה"
+      }
+    },
+    {
+      "id": "sticker-cutout",
+      "name": "Subject cutout sticker",
+      "aliases": [
+        "sticker effect",
+        "cutout freeze",
+        "אפקט מדבקה"
+      ],
+      "category": "Emphasis",
+      "summary": "The subject is cut out from the background, gets a thick white outline and a shadow, and 'pops' out like a sticker — usually on a frozen frame.",
+      "when_to_use": "To introduce a person or product, for a 'who's this?' moment or to emphasize a reaction; pairs well with a freeze frame.",
+      "recipe": "Pick a frame, separate the subject (background removal), and create an 8–20 px white outline by dilating the alpha channel, plus a soft shadow. Animate scale from 100% to 110% with overshoot and a slight rotation (about 3°), and dim or blur the background. Hold for 0.5–1.5 seconds, then return to the video.",
+      "tags": [
+        "cutout",
+        "outline",
+        "freeze-frame",
+        "emphasis"
+      ],
+      "reference": "Common editing technique",
+      "he": {
+        "category": "הדגשה",
+        "summary": "הנושא נחתך מהרקע, מקבל קו מתאר לבן עבה וצל, ו'קופץ' החוצה כמו מדבקה — לרוב על פריים קפוא.",
+        "when_to_use": "להצגת דמות או מוצר, לרגע 'מי זה?' או להדגשת תגובה; משתלב עם freeze frame.",
+        "recipe": "בוחרים פריים, מפרידים את הנושא (הסרת רקע), יוצרים קו מתאר לבן של 8–20px מהרחבת ערוץ האלפא וצל רך. מנפישים scale של 100%→110% עם overshoot וסיבוב קל (כ-3°), ומעמעמים או מטשטשים את הרקע. מחזיקים 0.5–1.5 שניות וחוזרים לווידאו.",
+        "tags": [
+          "cutout",
+          "outline",
+          "freeze-frame",
+          "הדגשה"
+        ],
+        "reference": "טכניקת עריכה נפוצה"
+      }
+    },
+    {
+      "id": "callout-annotation",
+      "name": "Callouts / animated annotations",
+      "aliases": [
+        "arrow callout",
+        "circle highlight",
+        "hand-drawn highlight",
+        "סימון ומצביע"
+      ],
+      "category": "Emphasis",
+      "summary": "Arrows, circles, underlines or boxes drawn on in motion to direct the eye to a detail in the frame.",
+      "when_to_use": "In screen tutorials, product reviews and to highlight a small detail viewers might miss.",
+      "recipe": "Draw a shape (circle, arrow, line) and animate its stroke from 0% to 100% over 8–12 frames, in a contrasting color, 6–12 px thick. If the object moves, attach the shape to tracking. Add a slight zoom into the marked area, and remove the annotation once the point is made.",
+      "tags": [
+        "annotation",
+        "arrow",
+        "highlight",
+        "overlay"
+      ],
+      "reference": "Common editing technique",
+      "he": {
+        "category": "הדגשה",
+        "summary": "חיצים, עיגולים, קו תחתון או מסגרת שמצוירים בתנועה כדי להפנות את העין לפרט בפריים.",
+        "when_to_use": "בהדרכות מסך, סקירות מוצר והדגשת פרט קטן שהצופה עלול לפספס.",
+        "recipe": "מציירים צורה (עיגול, חץ, קו) ומנפישים את ה-stroke מ-0% ל-100% במשך 8–12 פריימים, בצבע מנוגד ובעובי 6–12px. אם האובייקט זז — מצמידים את הצורה ל-tracking. מוסיפים זום קל לאזור המסומן, ומסירים את הסימון אחרי שהנקודה הובנה.",
+        "tags": [
+          "annotation",
+          "arrow",
+          "highlight",
+          "overlay"
+        ],
+        "reference": "טכניקת עריכה נפוצה"
+      }
+    },
+    {
+      "id": "letterbox",
+      "name": "Cinematic letterbox bars",
+      "aliases": [
+        "black bars",
+        "cinema bars",
+        "פסים קולנועיים"
+      ],
+      "category": "Reveal/Mask",
+      "summary": "Black bars at the top and bottom slide in and narrow the frame to a wide ratio — a 'now it's cinematic' feel.",
+      "when_to_use": "For a dramatic moment, a trailer or B-roll; less suited to an entire vertical Reel.",
+      "recipe": "Add two black rectangles (drawbox) whose height animates from 0 to the target over 10–15 frames with an ease-out. On 1080×1920 a 2.39:1 ratio leaves only a ~452 px band, so narrower bars are usually used. Check that the subject and captions aren't cut off.",
+      "tags": [
+        "letterbox",
+        "cinematic",
+        "overlay",
+        "own-footage"
+      ],
+      "reference": "https://ffmpeg.org/ffmpeg-filters.html#drawbox",
+      "he": {
+        "category": "חשיפה/מסכה",
+        "summary": "פסים שחורים למעלה ולמטה שנכנסים בתנועה ומצמצמים את הפריים ליחס רחב — תחושת 'עכשיו זה קולנועי'.",
+        "when_to_use": "לרגע דרמטי, טריילר או B-roll; פחות מתאים לאורך כל Reel אנכי.",
+        "recipe": "מוסיפים שני מלבנים שחורים (drawbox) שגובהם מונפש מ-0 לגובה היעד במשך 10–15 פריימים עם ease-out. ב-1080×1920 יחס 2.39:1 משאיר רצועה של כ-452px בלבד, ולכן לרוב משתמשים בפסים צרים יותר. בודקים שהנושא והכיתוב לא נחתכים.",
+        "tags": [
+          "letterbox",
+          "cinematic",
+          "overlay",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "before-after-slider",
+      "name": "Before/after slider",
+      "aliases": [
+        "comparison wipe",
+        "reveal slider",
+        "לפני ואחרי"
+      ],
+      "category": "Reveal/Mask",
+      "summary": "A divider line moves across the screen and reveals the 'after' version over the 'before', usually with a handle or labels.",
+      "when_to_use": "To show an improvement — color grading, a renovation, grooming, a photo fix.",
+      "recipe": "Align both shots exactly (an edited version of the same shot is already aligned). Put 'after' above 'before' with a rectangular mask whose edge animates from left to right (or crop with an animated width + overlay), and add a thin white line and a handle at the edge. Move slowly with easing, pause in the middle, and come back.",
+      "tags": [
+        "before-after",
+        "wipe",
+        "mask",
+        "own-footage"
+      ],
+      "reference": "https://ffmpeg.org/ffmpeg-filters.html#overlay-1",
+      "he": {
+        "category": "חשיפה/מסכה",
+        "summary": "קו מפריד זז על המסך וחושף את גרסת ה'אחרי' מעל ה'לפני', לרוב עם ידית או תוויות.",
+        "when_to_use": "להצגת שיפור — עריכת צבע, שיפוץ, טיפוח, תיקון תמונה.",
+        "recipe": "מיישרים את שני השוטים בדיוק (בגרסה ערוכה של אותו שוט זה כבר מיושר). מניחים את 'אחרי' מעל 'לפני' עם מסכה מלבנית שהקצה שלה מונפש משמאל לימין (או crop עם רוחב מונפש + overlay), ומוסיפים קו לבן דק וידית בקצה. תנועה איטית עם ease, עצירה באמצע וחזרה.",
+        "tags": [
+          "before-after",
+          "wipe",
+          "mask",
+          "וידאו-מקורי"
+        ]
+      }
+    },
+    {
+      "id": "word-captions",
+      "name": "Word-by-word captions",
+      "aliases": [
+        "animated subtitles",
+        "karaoke captions",
+        "כתוביות מילה-מילה"
+      ],
+      "category": "Typography",
+      "summary": "Captions of 1–4 words at a time, synced to speech, with the current word or a key word highlighted by color or size.",
+      "when_to_use": "In almost every talking video for Reels — most viewers watch without sound.",
+      "recipe": "Transcribe with word-level timestamps, split into short phrases (up to about 20 characters per line) and place them in the lower third, above the icon area. Use a bold font with a stroke or shadow for readability, highlight one key word in color, and add a short pop entrance (scale 90%→100% over 3 frames). For right-to-left languages, check text direction and the order of embedded English words.",
+      "tags": [
+        "captions",
+        "text",
+        "subtitles",
+        "talking-head"
+      ],
+      "reference": "https://ffmpeg.org/ffmpeg-filters.html#drawtext-1",
+      "he": {
+        "category": "טיפוגרפיה",
+        "summary": "כתוביות של 1–4 מילים בכל פעם, מסונכרנות לדיבור, עם הדגשה של המילה הנוכחית או של מילת מפתח בצבע או בגודל.",
+        "when_to_use": "כמעט בכל סרטון דיבור ל-Reels — רוב הצופים צופים בלי סאונד.",
+        "recipe": "מתמללים עם חותמות זמן ברמת מילה, מחלקים לביטויים קצרים (עד כ-20 תווים בשורה) וממקמים בשליש התחתון, מעל אזור האייקונים. פונט עבה עם stroke או צל לקריאות, מילת מפתח אחת מודגשת בצבע, וכניסת pop קצרה (scale 90%→100% ב-3 פריימים). בעברית בודקים RTL ואת סדר המילים באנגלית בתוך המשפט.",
+        "tags": [
+          "captions",
+          "text",
+          "subtitles",
+          "talking-head"
+        ]
+      }
+    },
+    {
+      "id": "typewriter",
+      "name": "Typewriter text",
+      "aliases": [
+        "type on",
+        "character reveal",
+        "טקסט מוקלד"
+      ],
+      "category": "Typography",
+      "summary": "Text appears letter by letter, sometimes with a blinking cursor.",
+      "when_to_use": "For quotes, a simulated search, chat messages and investigative titles.",
+      "recipe": "Show a string that grows over time at 15–25 characters per second, with a '|' cursor blinking at 2 Hz after the last letter. For right-to-left languages, letters are added from right to left. Keep the full text on screen for at least 1.5 seconds before cutting.",
+      "tags": [
+        "text",
+        "typewriter",
+        "overlay"
+      ],
+      "reference": "Common editing technique",
+      "he": {
+        "category": "טיפוגרפיה",
+        "summary": "טקסט מופיע אות אחר אות, לפעמים עם סמן מהבהב.",
+        "when_to_use": "לציטוטים, חיפוש מדומה, הודעות צ'אט וכותרות תחקיר.",
+        "recipe": "מציגים מחרוזת שמתארכת לפי הזמן, בקצב של 15–25 תווים לשנייה, עם סמן '|' שמהבהב ב-2Hz אחרי האות האחרונה. בעברית האותיות מתווספות מימין לשמאל. משאירים את הטקסט המלא לפחות 1.5 שניות לקריאה לפני החיתוך.",
+        "tags": [
+          "text",
+          "typewriter",
+          "overlay"
+        ],
+        "reference": "טכניקת עריכה נפוצה"
+      }
+    },
+    {
+      "id": "vhs-look",
+      "name": "VHS / camcorder look",
+      "aliases": [
+        "retro tape",
+        "VHS glitch",
+        "מראה קלטת"
+      ],
+      "category": "Texture/Stylize",
+      "summary": "The look of an old videotape: soft resolution, color bleed, noise, scanlines, tracking bands and a date in the corner.",
+      "when_to_use": "For nostalgia, flashbacks, 'back in the day' videos and home-video style clips.",
+      "recipe": "Downscale to about 360p and scale back up (to soften resolution), shift the chroma channels a few pixels (chromashift/rgbashift), reduce sharpness and add noise, scanlines and a vignette. Occasionally add a short horizontal tracking band, and a date or PLAY label in a monospace font. You can narrow to 4:3 with bars.",
+      "tags": [
+        "vhs",
+        "retro",
+        "noise",
+        "stylize"
+      ],
+      "reference": "https://ffmpeg.org/ffmpeg-filters.html#chromashift",
+      "he": {
+        "category": "טקסטורה/סגנון",
+        "summary": "מראה של קלטת וידאו ישנה: רזולוציה רכה, דימום צבע, רעש, שורות סריקה, רצועות עיוות ותאריך בפינה.",
+        "when_to_use": "לנוסטלגיה, flashback, סרטוני 'פעם' וקטעים בסגנון וידאו ביתי.",
+        "recipe": "מקטינים לכ-360p ומגדילים חזרה (ריכוך רזולוציה), מזיזים את ערוצי הכרומה בכמה פיקסלים (chromashift/rgbashift), מורידים חדות ומוסיפים noise, scanlines ו-vignette. מדי פעם מוסיפים רצועת עיוות אופקית קצרה, ותאריך או PLAY בפונט מונוספייס. אפשר לצמצם ל-4:3 עם פסים.",
+        "tags": [
+          "vhs",
+          "retro",
+          "noise",
+          "stylize"
+        ]
+      }
+    },
+    {
+      "id": "datamosh",
+      "name": "Datamosh / pixel bleed",
+      "aliases": [
+        "datamoshing",
+        "compression glitch",
+        "דאטה-מוש"
+      ],
+      "category": "Texture/Stylize",
+      "summary": "Pixels from the previous shot smear into the motion of the next — a deliberate compression artifact that looks like the image melting.",
+      "when_to_use": "For aggressive transitions in music videos and gaming or electronic content; use briefly.",
+      "recipe": "The classic method: re-encode with distant keyframes and remove the I-frame at the start of the second shot, so B's motion vectors are applied to A's pixels. A more predictable alternative: animated noise/displacement combined with tblend. Limit it to 0.5–1.5 seconds and always end on a clean frame.",
+      "tags": [
+        "glitch",
+        "datamosh",
+        "transition",
+        "stylize"
+      ],
+      "reference": "Common editing technique",
+      "he": {
+        "category": "טקסטורה/סגנון",
+        "summary": "פיקסלים מהשוט הקודם 'נמרחים' לתוך התנועה של השוט הבא — ארטיפקט דחיסה מכוון שנראה כמו התכה של התמונה.",
+        "when_to_use": "במעבר אגרסיבי בקליפים ובתוכן גיימינג או אלקטרוני; לשימוש קצר בלבד.",
+        "recipe": "השיטה הקלאסית: מקודדים מחדש עם keyframes רחוקים ומסירים את ה-I-frame בתחילת השוט השני, כך שווקטורי התנועה של B מופעלים על הפיקסלים של A. חלופה צפויה יותר: noise/displacement מונפש בשילוב tblend. מגבילים ל-0.5–1.5 שניות ותמיד מסיימים בפריים נקי.",
+        "tags": [
+          "glitch",
+          "datamosh",
+          "מעבר",
+          "stylize"
+        ],
+        "reference": "טכניקת עריכה נפוצה"
+      }
+    },
+    {
+      "id": "sketch-comic",
+      "name": "Sketch / comic edge look",
+      "aliases": [
+        "cartoon effect",
+        "edge detect",
+        "קומיקס"
+      ],
+      "category": "Texture/Stylize",
+      "summary": "Emphasizing outlines and reducing detail and colors so the video looks like a line drawing or comic.",
+      "when_to_use": "For switching to an illustrated style, emphasizing a moment or a stylized intro.",
+      "recipe": "Clean noise (smartblur), extract lines with edgedetect=mode=colormix — or with edgedetect on a separate layer blended in multiply — and reduce colors (stepped curves / posterize). Halftone or paper texture completes a comic look. Keep it to a short segment.",
+      "tags": [
+        "sketch",
+        "comic",
+        "edge",
+        "stylize"
+      ],
+      "reference": "https://ffmpeg.org/ffmpeg-filters.html#edgedetect",
+      "he": {
+        "category": "טקסטורה/סגנון",
+        "summary": "הדגשת קווי מתאר וצמצום פרטים וצבעים, כך שהווידאו נראה כמו ציור קו או קומיקס.",
+        "when_to_use": "למעבר לסגנון מאויר, להדגשת רגע או לפתיח מסוגנן.",
+        "recipe": "מנקים רעש (smartblur), מפיקים קווים עם edgedetect=mode=colormix — או בשכבה נפרדת עם edgedetect שמתמזגת ב-multiply — ומצמצמים צבעים (curves בצעדים / posterize). halftone או paper texture משלימים מראה קומיקס. מגבילים לקטע קצר.",
+        "tags": [
+          "sketch",
+          "comic",
+          "edge",
+          "stylize"
+        ]
+      }
+    },
+    {
+      "id": "kaleidoscope",
+      "name": "Kaleidoscope / mirror segments",
+      "aliases": [
+        "kaleido",
+        "symmetry effect",
+        "קליידוסקופ"
+      ],
+      "category": "Transform/Distort",
+      "summary": "The frame is mirrored into several symmetric segments that rotate — like a kaleidoscope.",
+      "when_to_use": "For music videos, abstract visuals, nature and lights.",
+      "recipe": "Simple version: crop to a half or quarter, hflip/vflip and reassemble (hstack/vstack) for 2- or 4-way symmetry. For more segments, use geq or a shader that maps the polar angle to a segment. Animate a slow rotation of the source (not of the result) and keep it on the beat.",
+      "tags": [
+        "mirror",
+        "symmetry",
+        "distort",
+        "stylize"
+      ],
+      "reference": "https://ffmpeg.org/ffmpeg-filters.html#hflip",
+      "he": {
+        "category": "טרנספורמציה/עיוות",
+        "summary": "הפריים משתקף לכמה פלחים סימטריים שמסתובבים — נראה כמו קליידוסקופ.",
+        "when_to_use": "לקליפים מוזיקליים, אבסטרקט, טבע ואורות.",
+        "recipe": "גרסה פשוטה: crop לחצי או לרבע, hflip/vflip והרכבה מחדש (hstack/vstack) לסימטריה של 2 או 4. ליותר פלחים משתמשים ב-geq או ב-shader שממפה זווית פולארית לפלח. מנפישים סיבוב איטי של המקור (לא של התוצאה) ושומרים על קצב לביט.",
+        "tags": [
+          "mirror",
+          "symmetry",
+          "distort",
+          "stylize"
+        ]
+      }
+    },
+    {
+      "id": "shatter",
+      "name": "Shatter / disintegrate",
+      "aliases": [
+        "glass shatter",
+        "particle dissolve",
+        "logo shatter",
+        "התנפצות"
+      ],
+      "category": "Transform/Distort",
+      "summary": "The object or frame breaks into shards or particles that fly outward, sometimes revealing the next shot.",
+      "when_to_use": "For a punch on a strong beat, a logo exit or a character vanishing; use rarely.",
+      "recipe": "Separate the object with a mask (or take the whole frame), split it into shards (Voronoi or triangles) or particles, and give each shard an initial velocity from the impact point, rotation and gravity, with a fade-out. Add a short flash and shake at the moment of impact. Requires a compositing/3D engine (After Effects, Blender, or Canvas/WebGL in an HTML-to-video tool).",
+      "tags": [
+        "shatter",
+        "particles",
+        "impact",
+        "overlay"
+      ],
+      "reference": "Common editing technique",
+      "he": {
+        "category": "טרנספורמציה/עיוות",
+        "summary": "האובייקט או הפריים מתפרקים לרסיסים או חלקיקים שעפים החוצה, ולעתים חושפים את השוט הבא.",
+        "when_to_use": "לפאנץ' על ביט חזק, ליציאת לוגו או להיעלמות של דמות; לשימוש נדיר.",
+        "recipe": "מפרידים את האובייקט במסכה (או לוקחים את כל הפריים), מחלקים לרסיסים (Voronoi או משולשים) או לחלקיקים, ומנפישים לכל רסיס מהירות התחלתית מנקודת הפגיעה, סיבוב וכבידה, עם fade-out. מוסיפים flash קצר ו-shake ברגע הפגיעה. דורש מנוע compositing/3D (After Effects, Blender, או Canvas/WebGL בכלי HTML-to-video).",
+        "tags": [
+          "shatter",
+          "particles",
+          "impact",
+          "overlay"
+        ],
+        "reference": "טכניקת עריכה נפוצה"
+      }
+    }
+  ]
+}

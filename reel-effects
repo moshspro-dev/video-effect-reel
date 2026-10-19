@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+PROJECT_DIR="$(cd "$(dirname "$0")" && pwd)"
+PYTHON="${REEL_EFFECTS_PYTHON:-}"
+if [[ -z "$PYTHON" && -x "$PROJECT_DIR/.venv/bin/python" ]]; then
+  PYTHON="$PROJECT_DIR/.venv/bin/python"
+elif [[ -z "$PYTHON" ]]; then
+  PYTHON="python3"
+fi
+exec "$PYTHON" "$PROJECT_DIR/reel_effects.py" "$@"

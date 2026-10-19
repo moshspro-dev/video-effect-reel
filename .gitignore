@@ -1,0 +1,9 @@
+.venv/
+.claude/settings.local.json
+work/
+downloads/
+__pycache__/
+*.pyc
+local/
+# lock file from older versions
+library/.effects.lock
