@@ -1,0 +1,17 @@
+{
+  "name": "video-effect-reel",
+  "owner": { "name": "moshspro-dev" },
+  "metadata": {
+    "description": "Video Effect Reel: a library of video-editing effect recipes for Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "video-effects",
+      "source": "./",
+      "description": "123 video-editing effect recipes (transitions, speed ramps, looks, captions, compositing) that Claude looks up before building them in your edit.",
+      "version": "1.0.0",
+      "category": "media",
+      "tags": ["video-editing", "ffmpeg", "effects", "transitions", "reels"]
+    }
+  ]
+}

@@ -4,7 +4,6 @@
 from __future__ import annotations
 
 import argparse
-import fcntl
 import json
 import os
 import re
@@ -15,6 +14,11 @@ import sys
 from contextlib import contextmanager
 from datetime import datetime, timezone
 from pathlib import Path
+
+try:
+    import fcntl  # POSIX only; lookups (find/check/index) work without it
+except ImportError:  # pragma: no cover - e.g. native Windows
+    fcntl = None
 
 
 
@@ -78,11 +82,13 @@ def analyses_lock():
     """Serialize analysis writes between the CLI, the web server and its threads."""
     LOCAL.mkdir(parents=True, exist_ok=True)
     with open(LOCAL / ".lock", "a") as handle:
-        fcntl.flock(handle, fcntl.LOCK_EX)
+        if fcntl:
+            fcntl.flock(handle, fcntl.LOCK_EX)
         try:
             yield
         finally:
-            fcntl.flock(handle, fcntl.LOCK_UN)
+            if fcntl:
+                fcntl.flock(handle, fcntl.LOCK_UN)
 
 
 def write_analyses(analyses: list[dict]) -> None:

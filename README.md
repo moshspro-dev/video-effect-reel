@@ -11,7 +11,7 @@ You also get **123 ready-made effect recipes** out of the box.
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776AB)
 
-[Quick start](#-quick-start) · [Effects](#-123-effects-and-counting) · [Use it from your editing agent](#-plug-it-into-your-editing-agent) · [Contribute](#-add-an-effect-in-5-minutes)
+[Install the plugin](#-install-as-a-claude-code-plugin-one-step) · [Quick start](#-quick-start-analyze-videos-yourself) · [Effects](#-123-effects-and-counting) · [Use it from your own agent](#-plug-it-into-your-own-editing-agent) · [Contribute](#-add-an-effect-in-5-minutes)
 
 <img src="docs/images/effects-reel.gif" alt="Six effects from the library rendered on a test clip: RGB split, zoom punch-in, boomerang, VHS look, echo trails, mirror" width="100%">
 
@@ -29,7 +29,19 @@ You also get **123 ready-made effect recipes** out of the box.
 
 It is a **reference library, not a renderer**. Your own editing tool (HyperFrames, Remotion, FFmpeg, After Effects…) does the rendering; this project tells it *what* to build and *how*.
 
-## 🚀 Quick start
+## 🔌 Install as a Claude Code plugin (one step)
+
+Just want Claude to use the effect recipes while you edit? Install the plugin. No setup, FFmpeg or analysis tools needed:
+
+```text
+/plugin install video-effects --marketplace moshspro-dev/video-effect-reel
+```
+
+(Older Claude Code versions: `/plugin marketplace add moshspro-dev/video-effect-reel`, then `/plugin install video-effects@video-effect-reel`.)
+
+From then on, when you ask for a transition, a look or "a speed ramp on that line", Claude looks up the recipe and adapts it to your project. Updates arrive through the normal plugin update flow.
+
+## 🚀 Quick start (analyze videos yourself)
 
 ```bash
 git clone https://github.com/moshspro-dev/video-effect-reel.git
@@ -73,7 +85,7 @@ Paste a Reel link or upload a clip, review the effect names Claude suggests, and
 
 Every recipe says what you see, when to use it, and how to recreate it on your own footage. Several include FFmpeg commands that were test-run. Browse them all in [`library/EFFECTS.md`](library/EFFECTS.md).
 
-## 🔌 Plug it into your editing agent
+## 🤖 Plug it into your own editing agent
 
 Give your editing skill or agent one line and it will look recipes up instead of improvising:
 
@@ -105,7 +117,7 @@ The starter pack is based on the documented Remotion transitions and effects and
 
 - Python 3.10+ (`find`, `check` and `index` need nothing else)
 - For analyzing videos: FFmpeg, [Claude Code](https://claude.com/claude-code) signed in (`claude auth status`), plus the packages from `./setup.sh` (Pillow, yt-dlp)
-- macOS or Linux (Windows via WSL)
+- macOS or Linux for the full tool. The effect lookup (`find`, and the plugin) needs only Python 3 and also runs on Windows
 
 ## 🛠️ Everyday commands
 

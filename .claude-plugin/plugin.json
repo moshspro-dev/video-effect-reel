@@ -1,0 +1,10 @@
+{
+  "name": "video-effects",
+  "version": "1.0.0",
+  "description": "123 video-editing effect recipes (transitions, speed ramps, looks, captions, compositing) that Claude looks up before building them in your edit.",
+  "author": { "name": "moshspro-dev" },
+  "homepage": "https://github.com/moshspro-dev/video-effect-reel",
+  "repository": "https://github.com/moshspro-dev/video-effect-reel",
+  "license": "MIT",
+  "keywords": ["video-editing", "ffmpeg", "effects", "transitions", "reels"]
+}

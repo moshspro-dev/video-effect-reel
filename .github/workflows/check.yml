@@ -20,3 +20,5 @@ jobs:
         run: python -m py_compile reel_effects.py web_server.py
       - name: Validate effects library
         run: python reel_effects.py check
+      - name: Validate plugin manifests
+        run: python -c "import json; [json.load(open(f)) for f in ('.claude-plugin/plugin.json', '.claude-plugin/marketplace.json')]"
