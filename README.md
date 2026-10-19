@@ -1,4 +1,4 @@
-# Reel Effect Lab
+# Video Effect Reel
 
 Analyze a Reel or local video with Claude Code and accumulate a searchable, evidence-linked effects library. The analyzer samples densely (12 fps by default; up to 30 fps) and makes timestamped contact sheets. Claude writes an analysis; the local CLI saves it to your private `local/` folder. The library includes a clearly separated starter pack of common editing recipes; these are references for applying effects to the user's footage, not claims that a technique appeared in a Reel.
 
@@ -13,12 +13,12 @@ This is a growing reference library, not model training. Future runs can read th
 The library only documents techniques; your editing tool (a Claude Code skill, an agent, HyperFrames, Remotion, FFmpeg) does the rendering. Give it a one-line lookup:
 
 ```bash
-/path/to/reel-effect-lab/reel-effects find "speed ramp"            # English or Hebrew words
-/path/to/reel-effect-lab/reel-effects find רמפת מהירות --lang he   # recipes printed in Hebrew
-/path/to/reel-effect-lab/reel-effects find vhs --json              # structured output for scripts
+/path/to/video-effect-reel/reel-effects find "speed ramp"            # English or Hebrew words
+/path/to/video-effect-reel/reel-effects find רמפת מהירות --lang he   # recipes printed in Hebrew
+/path/to/video-effect-reel/reel-effects find vhs --json              # structured output for scripts
 ```
 
-`find` matches every word you give it against names, aliases, tags and recipes in both languages, plus your private analyses, and prints the best matches with their recipes. A ready-to-paste section for your editing skill is in [integrations/editing-skill-snippet.md](integrations/editing-skill-snippet.md). Typical wiring: add a line such as "Before choosing an effect or transition, run `/path/to/reel-effect-lab/reel-effects find <idea>` and follow the recipe it returns" to your editing skill or project `CLAUDE.md`. Alternatively start Claude Code in your video project with `claude --add-dir /path/to/reel-effect-lab` so it can read the library files directly.
+`find` matches every word you give it against names, aliases, tags and recipes in both languages, plus your private analyses, and prints the best matches with their recipes. A ready-to-paste section for your editing skill is in [integrations/editing-skill-snippet.md](integrations/editing-skill-snippet.md). Typical wiring: add a line such as "Before choosing an effect or transition, run `/path/to/video-effect-reel/reel-effects find <idea>` and follow the recipe it returns" to your editing skill or project `CLAUDE.md`. Alternatively start Claude Code in your video project with `claude --add-dir /path/to/video-effect-reel` so it can read the library files directly.
 
 ## Language and privacy
 
@@ -64,14 +64,14 @@ For a fresh clone, run `./setup.sh` to install the Python dependencies into a pr
 REEL_EFFECTS_HOST=<your-LAN-IP> .venv/bin/python web_server.py   # reachable from your phone on the same Wi-Fi
 ```
 
-To keep it running in the background, copy `deploy/reel-effect-lab.service` to `~/.config/systemd/user/`, edit the lines marked `EDIT`, and run `systemctl --user enable --now reel-effect-lab`.
+To keep it running in the background, copy `deploy/video-effect-reel.service` to `~/.config/systemd/user/`, edit the lines marked `EDIT`, and run `systemctl --user enable --now video-effect-reel`.
 
 **Security:** the page has no login. Anyone who can reach it can submit videos (which run Claude Code on your account) and view the catalog. Bind it only to `127.0.0.1` or a private home-network address. Never expose it to the public internet.
 
 The web page runs Claude Code automatically in a fresh, non-interactive session for each submitted video. To work with Claude Code interactively instead:
 
 ```bash
-cd reel-effect-lab
+cd video-effect-reel
 claude
 ```
 

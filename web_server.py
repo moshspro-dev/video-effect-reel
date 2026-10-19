@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""LAN/loopback upload UI and single-worker queue for Reel Effect Lab."""
+"""LAN/loopback upload UI and single-worker queue for Video Effect Reel."""
 
 from __future__ import annotations
 
@@ -116,7 +116,7 @@ def worker() -> None:
 
 
 class Handler(BaseHTTPRequestHandler):
-    server_version = "ReelEffectLab/1.0"
+    server_version = "VideoEffectReel/1.0"
 
     def log_message(self, fmt: str, *args: object) -> None:
         print(f"{self.client_address[0]} - {fmt % args}", flush=True)
@@ -275,7 +275,7 @@ def main() -> None:
     fail_interrupted_jobs()
     threading.Thread(target=worker, name="effect-analysis", daemon=True).start()
     server = ThreadingHTTPServer((host, port), Handler)
-    print(f"Reel Effect Lab listening on http://{host}:{port}", flush=True)
+    print(f"Video Effect Reel listening on http://{host}:{port}", flush=True)
     server.serve_forever()
 
 

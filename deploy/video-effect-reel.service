@@ -1,16 +1,16 @@
 # Example systemd *user* unit for the LAN web page.
-# Copy to ~/.config/systemd/user/reel-effect-lab.service, then edit the values marked EDIT:
-#   systemctl --user daemon-reload && systemctl --user enable --now reel-effect-lab
+# Copy to ~/.config/systemd/user/video-effect-reel.service, then edit the values marked EDIT:
+#   systemctl --user daemon-reload && systemctl --user enable --now video-effect-reel
 # %h is your home directory.
 [Unit]
-Description=Reel Effect Lab LAN web app
+Description=Video Effect Reel LAN web app
 After=network-online.target
 Wants=network-online.target
 
 [Service]
 Type=simple
 # EDIT: where you cloned the repo.
-WorkingDirectory=%h/reel-effect-lab
+WorkingDirectory=%h/video-effect-reel
 # EDIT: 127.0.0.1 keeps the page on this computer only; set your machine's LAN IP to open it to your home network.
 # The page has no login, so never bind it to a public address.
 Environment=REEL_EFFECTS_HOST=127.0.0.1
@@ -20,7 +20,7 @@ Environment=REEL_EFFECTS_PORT=4319
 # EDIT: must include the directory that contains the `claude` CLI (e.g. your Node/nvm bin directory).
 Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin
 UMask=0077
-ExecStart=%h/reel-effect-lab/.venv/bin/python %h/reel-effect-lab/web_server.py
+ExecStart=%h/video-effect-reel/.venv/bin/python %h/video-effect-reel/web_server.py
 Restart=on-failure
 RestartSec=3
 
