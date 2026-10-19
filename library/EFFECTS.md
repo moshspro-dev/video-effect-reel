@@ -1,7 +1,6 @@
 # Effect Library
 
-Starter recipes: 123  
-Other languages: [עברית](EFFECTS.he.md)
+Starter recipes: 123
 
 General reusable techniques, not claims that these appeared in an analyzed video.
 

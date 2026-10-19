@@ -288,7 +288,7 @@ Include only techniques visible in this video. Compare each visible technique ag
 
 LABELS = {
     "en": {"title": "# Effect Library", "count": "Starter recipes: {n}", "intro": "General reusable techniques, not claims that these appeared in an analyzed video.",
-           "when": "When to use", "recipe": "Recipe", "tags": "Tags", "reference": "Reference", "other": "Other languages: [עברית](EFFECTS.he.md)",
+           "when": "When to use", "recipe": "Recipe", "tags": "Tags", "reference": "Reference", "other": "",
            "analyses": "# My analyzed videos", "none": "No videos analyzed yet. Add one with `./reel-effects add <URL-or-file>`.",
            "source": "Source", "analyzed": "Analyzed", "summary": "Summary", "rhythm": "Editing rhythm", "confidence": "confidence",
            "evidence": "Evidence", "recreate": "Recreate"},
@@ -302,7 +302,7 @@ LABELS = {
 
 def render_index(starters: list[dict], lang: str) -> str:
     t = LABELS[lang]
-    lines = [t["title"], "", t["count"].format(n=len(starters)) + "  ", t["other"], "", t["intro"], ""]
+    lines = [t["title"], "", t["count"].format(n=len(starters)) + ("  " if t["other"] else ""), *([t["other"]] if t["other"] else []), "", t["intro"], ""]
     for raw in starters:
         effect = localize(raw, lang)
         lines += [f"### {effect['name']} — {effect['category']}", "", effect["summary"], "", f"{t['when']}: {effect['when_to_use']}", "",

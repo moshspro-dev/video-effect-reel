@@ -5,14 +5,13 @@
 **See a Reel with an editing trick you love? Find out what it is, and recreate it on your own footage.**
 
 Drop in a link or a video. Claude Code reads it frame by frame, names the effects, and writes a recipe for each one.
-You also get **123 ready-made effect recipes** out of the box, in English and Hebrew.
+You also get **123 ready-made effect recipes** out of the box.
 
 [![Library check](https://github.com/moshspro-dev/video-effect-reel/actions/workflows/check.yml/badge.svg)](https://github.com/moshspro-dev/video-effect-reel/actions/workflows/check.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776AB)
-![English + Hebrew](https://img.shields.io/badge/languages-English%20%2B%20%D7%A2%D7%91%D7%A8%D7%99%D7%AA-8a5cf6)
 
-[**עברית**](README.he.md) · [Quick start](#-quick-start) · [Effects](#-123-effects-and-counting) · [Use it from your editing agent](#-plug-it-into-your-editing-agent) · [Contribute](#-add-an-effect-in-5-minutes)
+[Quick start](#-quick-start) · [Effects](#-123-effects-and-counting) · [Use it from your editing agent](#-plug-it-into-your-editing-agent) · [Contribute](#-add-an-effect-in-5-minutes)
 
 <img src="docs/images/effects-reel.gif" alt="Six effects from the library rendered on a test clip: RGB split, zoom punch-in, boomerang, VHS look, echo trails, mirror" width="100%">
 
@@ -46,14 +45,14 @@ cd video-effect-reel
 <img src="docs/images/find.png" alt="Terminal: ./reel-effects find speed ramp prints the recipe" width="80%">
 </div>
 
-`find` searches English **and** Hebrew words at once. Add `--lang he` for Hebrew output or `--json` for scripts and agents.
+`find` searches names, aliases, tags and recipes, plus your own analyses. Add `--json` for scripts and agents.
 
 ## 📱 A page you can use from your phone
 
-Paste a Reel link or upload a clip, review the effect names Claude suggests, and save them to your private library. The page works in English or Hebrew (`./reel-effects lang he`).
+Paste a Reel link or upload a clip, review the effect names Claude suggests, and save them to your private library.
 
 <div align="center">
-<img src="docs/images/ui.jpg" alt="The web page on a phone: upload form, library search in English, and the same search in Hebrew" width="100%">
+<img src="docs/images/ui.jpg" alt="The web page on a phone: upload form, and two library searches" width="100%">
 </div>
 
 ## 🧰 123 effects and counting
@@ -72,7 +71,7 @@ Paste a Reel link or upload a clip, review the effect names Claude suggests, and
 | Text and emphasis | 6 | Word-by-word captions, kinetic text, typewriter, sticker cutout |
 | Other | 2 | Light leak, RGB split |
 
-Every recipe says what you see, when to use it, and how to recreate it on your own footage. Several include FFmpeg commands that were test-run. Browse them in [`library/EFFECTS.md`](library/EFFECTS.md) (English) or [`library/EFFECTS.he.md`](library/EFFECTS.he.md) (Hebrew).
+Every recipe says what you see, when to use it, and how to recreate it on your own footage. Several include FFmpeg commands that were test-run. Browse them all in [`library/EFFECTS.md`](library/EFFECTS.md).
 
 ## 🔌 Plug it into your editing agent
 
@@ -92,9 +91,7 @@ A ready-to-paste section for Claude Code skills and `CLAUDE.md` files is in [`in
 
 ## 🤝 Add an effect in 5 minutes
 
-Know a technique that's missing? Add one entry to `library/effects.json`, run `./reel-effects index && ./reel-effects check`, and open a pull request. A CI check validates every PR. Details, the entry format and the Hebrew translation block are in [CONTRIBUTING.md](CONTRIBUTING.md).
-
-Hebrew speakers: effects without a translation fall back to English, so translations are a great first contribution.
+Know a technique that's missing? Add one entry to `library/effects.json`, run `./reel-effects index && ./reel-effects check`, and open a pull request. A CI check validates every PR. The entry format and a checklist are in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## ⚙️ How it works
 
@@ -117,13 +114,12 @@ The starter pack is based on the documented Remotion transitions and effects and
 ./reel-effects add --start 4 --end 7 --fps 30 ~/Videos/clip.mp4   # a short, fast section
 ./reel-effects find zoom                                          # search recipes and your analyses
 ./reel-effects list                                               # print the whole library
-./reel-effects lang he                                            # Hebrew page and Hebrew analyses (en to switch back)
 ./reel-effects check                                              # validate the library
 ```
 
 If Instagram needs a logged-in session, add `--cookies-from-browser chrome` only for a browser profile that is already logged in, or just save the video and pass its path.
 
-Settings live in `local/settings.json` (or `REEL_EFFECTS_LANG`, `REEL_EFFECTS_LOCAL_DIR`). The latter can point to a synced folder if you want the same analyses on two computers.
+Your analyses live in `local/`. Set `REEL_EFFECTS_LOCAL_DIR` to a synced folder if you want the same analyses on two computers.
 
 ### Run the page in the background
 

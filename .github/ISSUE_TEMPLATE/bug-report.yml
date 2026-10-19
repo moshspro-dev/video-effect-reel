@@ -1,21 +1,21 @@
-name: דיווח על באג / Bug report
-description: משהו לא עובד ב-CLI או בדף האינטרנט
+name: Bug report
+description: Something doesn't work in the CLI or the web page
 labels: [bug]
 body:
   - type: textarea
     id: what
     attributes:
-      label: מה קרה ומה ציפית שיקרה?
+      label: What happened, and what did you expect?
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
-      label: איך משחזרים?
-      description: הפקודה שהרצת או מה לחצת בדף.
+      label: How can it be reproduced?
+      description: The command you ran, or what you clicked on the page.
   - type: textarea
     id: logs
     attributes:
-      label: הודעת שגיאה
-      description: הסירו נתיבים, כתובות IP או קישורים פרטיים לפני ההדבקה.
+      label: Error output
+      description: Remove file paths, IP addresses and private links before pasting.
       render: text

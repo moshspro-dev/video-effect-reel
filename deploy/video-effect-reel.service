@@ -15,8 +15,6 @@ WorkingDirectory=%h/video-effect-reel
 # The page has no login, so never bind it to a public address.
 Environment=REEL_EFFECTS_HOST=127.0.0.1
 Environment=REEL_EFFECTS_PORT=4319
-# Optional: page and analysis language (en or he). `./reel-effects lang he` does the same without editing this file.
-#Environment=REEL_EFFECTS_LANG=he
 # EDIT: must include the directory that contains the `claude` CLI (e.g. your Node/nvm bin directory).
 Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin
 UMask=0077
